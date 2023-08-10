@@ -3,40 +3,56 @@
     margin: 0;
     padding: 0;
 }
-header{
-    display: inline;
-}
+
+
 .container {
     width: 1366px;
     margin: 0 auto;
 }
+
+
 .articles article img {
     height: 180px;
-
 }
+
+
 .articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    align-items: center;
 }
+
 
 .articles article {
     width: 33%;
 }
 
+
 #technology h2 {
     color: red;
+    background-color: lightgray;
+    text-align: center; 
+    padding: 15px;
 }
 
 #economy h2 {
     color: orange;
+    background-color: lightblue;
+    text-align: center;
+    padding: 15px;
 }
 
 #Entertainment h2 {
     color: palevioletred;
+    background-color: lightgreen;
+    text-align: center;
+    padding: 15px;
 }
 
 #esport h2 {
     color: violet;
+    background-color: lightpink;
+    text-align: center;
+    padding: 15px;
 }
