@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1000 Ideias para Vender no Marketplace</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap');
+:root{--bg:#0a0a0f;--sur:#13131a;--card:#1a1a24;--bdr:#2a2a3a;--r:#ff4d6d;--b:#00aaff;--g:#00d4aa;--o:#ff9500;--p:#7b61ff;--pk:#ff61c7;--lm:#a8ff3e;--gd:gold;--cy:#64c8ff;--wh:#ff9090;--tx:#e8e8f0;--mt:#888899}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;padding:0 0 80px}
+/* HERO */
+.hero{text-align:center;padding:60px 20px 40px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:700px;height:400px;background:radial-gradient(ellipse,rgba(123,97,255,.15) 0%,transparent 70%);pointer-events:none}
+.hero-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--g);margin-bottom:14px}
+h1.title{font-family:'Bebas Neue',sans-serif;font-size:clamp(56px,12vw,130px);line-height:.9;letter-spacing:2px;background:linear-gradient(135deg,#fff 20%,var(--p) 80%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{margin:18px auto 0;color:var(--mt);font-size:14px;max-width:580px;line-height:1.7}
+.eq-wrap{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:24px auto 0;max-width:720px}
+.eq{display:flex;align-items:center;gap:6px;padding:6px 14px;border-radius:100px;font-size:11.5px;font-weight:500;border:1px solid;letter-spacing:.3px}
+.eq-r{color:var(--r);border-color:rgba(255,77,109,.3);background:rgba(255,77,109,.07)}
+.eq-b{color:var(--b);border-color:rgba(0,170,255,.3);background:rgba(0,170,255,.07)}
+.eq-g{color:var(--g);border-color:rgba(0,212,170,.3);background:rgba(0,212,170,.07)}
+.eq-o{color:var(--o);border-color:rgba(255,149,0,.3);background:rgba(255,149,0,.07)}
+.eq-pk{color:var(--pk);border-color:rgba(255,97,199,.3);background:rgba(255,97,199,.07)}
+/* STATS */
+.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:40px auto 0;padding:0 20px;max-width:900px}
+.stat{text-align:center;padding:18px 24px;border:1px solid var(--bdr);border-radius:12px;background:var(--sur);flex:1;min-width:110px}
+.sn{font-family:'Bebas Neue',sans-serif;font-size:44px;line-height:1;color:var(--p)}
+.sl{font-size:10px;color:var(--mt);letter-spacing:1px;text-transform:uppercase;margin-top:4px}
+/* CONTROLS */
+.controls{padding:30px 20px 0;max-width:1100px;margin:0 auto}
+.filters{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
+.fb{padding:6px 14px;border-radius:100px;border:1px solid var(--bdr);background:transparent;color:var(--mt);font-size:11.5px;font-family:'DM Sans',sans-serif;cursor:pointer;transition:all .2s;font-weight:500}
+.fb:hover,.fb.on{border-color:var(--p);color:var(--p);background:rgba(123,97,255,.1)}
+.fb.on{font-weight:600}
+.search-row{display:flex;gap:10px;align-items:center}
+.si{position:relative;flex:1;max-width:480px}
+.si input{width:100%;padding:10px 18px 10px 42px;border-radius:100px;border:1px solid var(--bdr);background:var(--sur);color:var(--tx);font-family:'DM Sans',sans-serif;font-size:13px;outline:none;transition:border-color .2s}
+.si input:focus{border-color:var(--p)}
+.si input::placeholder{color:var(--mt)}
+.si-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--mt)}
+.rc{font-family:'DM Mono',monospace;font-size:11px;color:var(--mt)}
+/* SECTIONS */
+.sections{max-width:1100px;margin:40px auto 0;padding:0 20px}
+.sec{margin-bottom:50px}
+.sec.hidden{display:none}
+.sec-hdr{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--bdr)}
+.sec-ico{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.sec-ttl{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:1px;line-height:1}
+.sec-dsc{font-size:11px;color:var(--mt);margin-top:3px}
+.sec-cnt{margin-left:auto;font-family:'DM Mono',monospace;font-size:10px;color:var(--mt);background:var(--sur);border:1px solid var(--bdr);padding:3px 9px;border-radius:100px;white-space:nowrap}
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--bdr);border-radius:9px;padding:12px 14px;transition:all .2s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;opacity:0;transition:opacity .2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.card:hover::before{opacity:1}
+.card.hidden{display:none}
+.ct{display:flex;align-items:flex-start;gap:8px;margin-bottom:7px}
+.cn{font-family:'DM Mono',monospace;font-size:9.5px;color:var(--mt);flex-shrink:0;width:28px;margin-top:2px}
+.cm{font-size:13px;font-weight:600;color:var(--tx);line-height:1.35;flex:1}
+.ctags{display:flex;gap:5px;flex-wrap:wrap;margin-left:36px}
+.tag{font-size:9.5px;padding:2px 7px;border-radius:100px;font-weight:500;border:1px solid;font-family:'DM Mono',monospace}
+.tr{color:var(--r);border-color:rgba(255,77,109,.35);background:rgba(255,77,109,.08)}
+.tb{color:var(--b);border-color:rgba(0,170,255,.35);background:rgba(0,170,255,.08)}
+.to{color:var(--o);border-color:rgba(255,149,0,.35);background:rgba(255,149,0,.08)}
+.tpk{color:var(--pk);border-color:rgba(255,97,199,.35);background:rgba(255,97,199,.08)}
+.tc{color:var(--lm);border-color:rgba(168,255,62,.35);background:rgba(168,255,62,.08)}
+.tp{font-size:9.5px;color:var(--mt);margin-left:36px;margin-top:4px;line-height:1.4}
+.hot-tag{color:var(--r)!important}
+/* NO RESULTS */
+.no-res{text-align:center;padding:60px 20px;color:var(--mt);font-size:14px;display:none}
+/* SECTION COLORS */
+.s1 .sec-ico{background:rgba(255,77,109,.12)}.s1 .sec-ttl{color:var(--r)}.s1 .card::before{background:var(--r)}
+.s2 .sec-ico{background:rgba(123,97,255,.12)}.s2 .sec-ttl{color:var(--p)}.s2 .card::before{background:var(--p)}
+.s3 .sec-ico{background:rgba(0,212,170,.12)}.s3 .sec-ttl{color:var(--g)}.s3 .card::before{background:var(--g)}
+.s4 .sec-ico{background:rgba(255,149,0,.12)}.s4 .sec-ttl{color:var(--o)}.s4 .card::before{background:var(--o)}
+.s5 .sec-ico{background:rgba(0,170,255,.12)}.s5 .sec-ttl{color:var(--b)}.s5 .card::before{background:var(--b)}
+.s6 .sec-ico{background:rgba(255,97,199,.12)}.s6 .sec-ttl{color:var(--pk)}.s6 .card::before{background:var(--pk)}
+.s7 .sec-ico{background:rgba(168,255,62,.12)}.s7 .sec-ttl{color:var(--lm)}.s7 .card::before{background:var(--lm)}
+.s8 .sec-ico{background:rgba(255,215,0,.12)}.s8 .sec-ttl{color:var(--gd)}.s8 .card::before{background:var(--gd)}
+.s9 .sec-ico{background:rgba(255,144,144,.1)}.s9 .sec-ttl{color:var(--wh)}.s9 .card::before{background:var(--wh)}
+.s10 .sec-ico{background:rgba(100,200,255,.1)}.s10 .sec-ttl{color:var(--cy)}.s10 .card::before{background:var(--cy)}
+.s11 .sec-ico{background:rgba(255,77,109,.1)}.s11 .sec-ttl{color:#ff7aa0}.s11 .card::before{background:#ff7aa0}
+.s12 .sec-ico{background:rgba(180,100,255,.1)}.s12 .sec-ttl{color:#c47dff}.s12 .card::before{background:#c47dff}
+.s13 .sec-ico{background:rgba(255,149,0,.1)}.s13 .sec-ttl{color:#ffb340}.s13 .card::before{background:#ffb340}
+.s14 .sec-ico{background:rgba(0,212,170,.1)}.s14 .sec-ttl{color:#40e8c2}.s14 .card::before{background:#40e8c2}
+.s15 .sec-ico{background:rgba(255,215,0,.1)}.s15 .sec-ttl{color:#ffd700}.s15 .card::before{background:#ffd700}
+.s16 .sec-ico{background:rgba(168,255,62,.1)}.s16 .sec-ttl{color:#90ff50}.s16 .card::before{background:#90ff50}
+.s17 .sec-ico{background:rgba(0,170,255,.1)}.s17 .sec-ttl{color:#40bbff}.s17 .card::before{background:#40bbff}
+.s18 .sec-ico{background:rgba(0,200,220,.1)}.s18 .sec-ttl{color:#00c8dc}.s18 .card::before{background:#00c8dc}
+.s19 .sec-ico{background:rgba(123,97,255,.1)}.s19 .sec-ttl{color:#9b7dff}.s19 .card::before{background:#9b7dff}
+.s20 .sec-ico{background:rgba(255,61,130,.1)}.s20 .sec-ttl{color:#ff6090}.s20 .card::before{background:#ff6090}
+.s21 .sec-ico{background:rgba(255,100,50,.1)}.s21 .sec-ttl{color:#ff8060}.s21 .card::before{background:#ff8060}
+.s22 .sec-ico{background:rgba(100,220,80,.1)}.s22 .sec-ttl{color:#78e060}.s22 .card::before{background:#78e060}
+.s23 .sec-ico{background:rgba(60,140,255,.1)}.s23 .sec-ttl{color:#5090ff}.s23 .card::before{background:#5090ff}
+.s24 .sec-ico{background:rgba(180,80,255,.1)}.s24 .sec-ttl{color:#cc60ff}.s24 .card::before{background:#cc60ff}
+.s25 .sec-ico{background:rgba(200,140,60,.1)}.s25 .sec-ttl{color:#e8a040}.s25 .card::before{background:#e8a040}
+.s26 .sec-ico{background:rgba(255,77,109,.1)}.s26 .sec-ttl{color:#ff6688}.s26 .card::before{background:#ff6688}
+.s27 .sec-ico{background:rgba(0,212,170,.1)}.s27 .sec-ttl{color:#30e0b0}.s27 .card::before{background:#30e0b0}
+.s28 .sec-ico{background:rgba(255,160,0,.1)}.s28 .sec-ttl{color:#ffa020}.s28 .card::before{background:#ffa020}
+.s29 .sec-ico{background:rgba(255,200,100,.1)}.s29 .sec-ttl{color:#ffc860}.s29 .card::before{background:#ffc860}
+.s30 .sec-ico{background:rgba(200,180,100,.1)}.s30 .sec-ttl{color:#d4c070}.s30 .card::before{background:#d4c070}
+/* FOOTER */
+footer{text-align:center;color:var(--mt);font-size:11px;margin-top:60px;padding:24px 20px;border-top:1px solid var(--bdr)}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-label">📦 Guia Completo · Marketplace BR</div>
+  <h1 class="title">1000<br>IDEIAS</h1>
+  <p class="hero-sub">30 nichos. 5 máquinas. Elegoo Saturn 4 12K · Bambu P1S PETG · Mercury Plus V3 · Gravação Laser · Moldes Silicone.</p>
+  <div class="eq-wrap">
+    <span class="eq eq-r">🔴 Resina 12K</span>
+    <span class="eq eq-b">🔵 FDM PETG</span>
+    <span class="eq eq-g">🟢 Lava &amp; Cura</span>
+    <span class="eq eq-o">🟠 Laser</span>
+    <span class="eq eq-pk">🩷 Molde Silicone</span>
+  </div>
+</div>
+<div class="stats">
+  <div class="stat"><div class="sn">1000</div><div class="sl">Ideias</div></div>
+  <div class="stat"><div class="sn">30</div><div class="sl">Nichos</div></div>
+  <div class="stat"><div class="sn">5</div><div class="sl">Máquinas</div></div>
+  <div class="stat"><div class="sn" id="vc">1000</div><div class="sl">Visíveis</div></div>
+</div>
+<div class="controls">
+  <div class="filters" id="filters">
+    <button class="fb on" data-f="all">Todos</button>
+    <button class="fb" data-f="resina">🔴 Resina</button>
+    <button class="fb" data-f="fdm">🔵 FDM</button>
+    <button class="fb" data-f="laser">🟠 Laser</button>
+    <button class="fb" data-f="molde">🩷 Molde</button>
+    <button class="fb" data-f="combo">✨ Combina máquinas</button>
+    <button class="fb" data-f="hot">🔥 Mais quentes</button>
+  </div>
+  <div class="search-row">
+    <div class="si"><span class="si-icon">🔍</span><input type="text" id="sq" placeholder="Buscar qualquer ideia..." /></div>
+    <div class="rc" id="rl">1000 de 1000</div>
+  </div>
+</div>
+<div class="sections" id="sections"></div>
+<div class="no-res" id="nr">Nenhuma ideia encontrada. Tente outro filtro.</div>
+<footer>1000 ideias para: Elegoo Saturn 4 Ultra 12K · Bambu Lab P1S · Mercury Plus V3 · Gravação Laser · Moldes Silicone · Boas vendas! 🚀</footer>
+
+<script>
+const SECS=[
+{id:1,cls:'s1',icon:'🎲',title:'Miniaturas & RPG / Board Games',desc:'Alta demanda, margens excelentes, comunidade fiel'},
+{id:2,cls:'s2',icon:'💎',title:'Joalheria, Bijuterias & Acessórios',desc:'Margens altas, personalização fácil, cliente recorrente'},
+{id:3,cls:'s3',icon:'🏠',title:'Decoração de Interiores',desc:'Ticket médio alto, fácil de mostrar em fotos'},
+{id:4,cls:'s4',icon:'🐾',title:'Mercado Pet',desc:'Crescimento explosivo — dono de pet gasta sem hesitar'},
+{id:5,cls:'s5',icon:'🎓',title:'Infantil, Brinquedos & Educação',desc:'Pais investem sem limite nos filhos'},
+{id:6,cls:'s6',icon:'💍',title:'Casamento, Festas & Eventos',desc:'Ticket altíssimo — cliente não regura no grande dia'},
+{id:7,cls:'s7',icon:'⚙️',title:'Tech, Utilidades & Home Office',desc:'Funcional + estético = produto difícil de rejeitar'},
+{id:8,cls:'s8',icon:'🍕',title:'Gastronomia, Bar & Cozinha',desc:'Presentes e utensílios com toque artesanal vendem muito'},
+{id:9,cls:'s9',icon:'👟',title:'Moda, Streetwear & Customização',desc:'Jovem paga caro por exclusividade'},
+{id:10,cls:'s10',icon:'🏢',title:'B2B, Sinalização & Serviços para Empresas',desc:'Pedidos grandes, recorrência, maior ticket'},
+{id:11,cls:'s11',icon:'🏋️',title:'Esportes & Fitness',desc:'Atleta e fã de esporte são clientes muito fiéis'},
+{id:12,cls:'s12',icon:'🎸',title:'Música & Instrumentos',desc:'Músico ama produto único para sua arte'},
+{id:13,cls:'s13',icon:'🏍️',title:'Automotivo & Motociclismo',desc:'Apaixonados pelo veículo — gastos sem limites'},
+{id:14,cls:'s14',icon:'🏥',title:'Saúde, Bem-estar & Clínicas',desc:'Alta precisão da resina 12K abre nichos únicos'},
+{id:15,cls:'s15',icon:'✝️',title:'Religião & Espiritualidade',desc:'Mercado imenso e cliente muito fiel'},
+{id:16,cls:'s16',icon:'🌿',title:'Jardinagem & Agricultura Urbana',desc:'Nicho de plantas explodiu — demanda constante'},
+{id:17,cls:'s17',icon:'📷',title:'Fotografia, Cinema & Criadores de Conteúdo',desc:'Streamer e fotógrafo adoram setup personalizado'},
+{id:18,cls:'s18',icon:'⛵',title:'Náutico, Pesca & Outdoor',desc:'Pescador e aventureiro pagam bem por produto certo'},
+{id:19,cls:'s19',icon:'📚',title:'Papelaria, Escritório & Escola',desc:'Material escolar e de escritório personalizado'},
+{id:20,cls:'s20',icon:'🌸',title:'Fandom, K-pop & Cultura Pop',desc:'Fã paga qualquer valor por item exclusivo do ídolo'},
+{id:21,cls:'s21',icon:'🎭',title:'Carnaval, Fantasia & Teatro',desc:'Cosplayer e folião investem pesado em fantasia'},
+{id:22,cls:'s22',icon:'♻️',title:'Sustentabilidade & Eco-friendly',desc:'Consumidor consciente valoriza produto responsável'},
+{id:23,cls:'s23',icon:'🔧',title:'Indústria, Prototipagem & Makers',desc:'B2B de alto valor — impressora é ferramenta profissional'},
+{id:24,cls:'s24',icon:'🔮',title:'Astrologia, Esoterismo & New Age',desc:'Mercado espiritual cresce forte no Brasil'},
+{id:25,cls:'s25',icon:'🤠',title:'Country, Sertanejo & Agronegócio',desc:'Brasil rural — nicho enorme e pouco explorado online'},
+{id:26,cls:'s26',icon:'👶',title:'Bebê, Maternidade & Chá de Bebê',desc:'Mãe não regura — ticket emocional altíssimo'},
+{id:27,cls:'s27',icon:'🎨',title:'Arte, Craft & Suprimentos para Artistas',desc:'Artesã compra molde e ferramenta = cliente recorrente'},
+{id:28,cls:'s28',icon:'✈️',title:'Turismo, Souvenirs & Regiões do Brasil',desc:'Produto regional com identidade = diferencial único'},
+{id:29,cls:'s29',icon:'🥋',title:'CrossFit, Artes Marciais & Esportes de Combate',desc:'Atleta de alta performance valoriza produto exclusivo'},
+{id:30,cls:'s30',icon:'👑',title:'Premium, Luxo & Presentes de Alto Valor',desc:'Produto certo para quem quer presentear com classe'},
+];
+
+const M={r:'resina',f:'fdm',l:'laser',m:'molde',c:'combo'};
+function t(codes){return codes.split('').map(c=>({r:'tr',f:'tb',l:'to',m:'tpk',c:'tc'}[c]||'')).filter(Boolean);}
+function ml(codes){return codes.split('').map(c=>({r:'resina',f:'fdm',l:'laser',m:'molde',c:'combo'}[c]||'')).filter(Boolean);}
+
+const IDEAS=[
+// === SEÇÃO 1: RPG (25) ===
+[1,1,'Miniaturas de personagens RPG (guerreiros, magos, elfos)','r','🔥 Comunidade RPG enorme no BR',true],
+[2,1,'Monstros e criaturas para D&D / Pathfinder','r','Dragões, beholders — clássicos que sempre vendem',false],
+[3,1,'Terrenos e cenários modulares (masmorras, florestas)','r','Kit completo de tiles = alto ticket médio',false],
+[4,1,'Marcadores de status e tokens para jogos de tabuleiro','r','Baixo custo, compra em quantidade',false],
+[5,1,'Miniaturas de anime e mangá (fanart)','r','Naruto, One Piece, Demon Slayer — nicho enorme',true],
+[6,1,'Personagens de videogame (fanart 3D)','r','Zelda, Dark Souls — colecionadores pagam bem',false],
+[7,1,'Bustos colecionáveis de super-heróis','rc','Qualidade 12K = diferencial visual enorme',false],
+[8,1,'Peças de xadrez temáticas (medievais, steampunk)','r','Presente diferenciado, ticket alto',false],
+[9,1,'Dados decorativos de resina (d20, d6 temáticos)','r','Muito buscado por jogadores de RPG',false],
+[10,1,'Porta-dados e organizador de mesa para RPG','rf','Combina resina (detalhe) + FDM (estrutura)',false],
+[11,1,'Miniaturas de exércitos estilo Warhammer','r','🔥 Alternativa acessível ao Warhammer caríssimo',true],
+[12,1,'Fichas de personagem 3D em resina','r','Produto premium para jogadores avançados',false],
+[13,1,'Baú de madeira gravado + miniaturas resina (kit RPG)','rlc','Kit presente — alto valor percebido',false],
+[14,1,'Marcadores de iniciativa e HP para D&D','r','Acessório funcional + decorativo',false],
+[15,1,'Cenário de batalha épica (diorama em resina)','r','Produto premium, ticket R$200+',false],
+[16,1,'Dados de silicone coloridos com inclusões','m','Muito popular no TikTok e Instagram',true],
+[17,1,'Molde custom + cópia de miniaturas (produção em escala)','mrc','Fluxo de produção escalável',false],
+[18,1,'Esculturas de dragões decorativas','r','Decoração + colecionável, muito buscado',false],
+[19,1,'Props e acessórios para cosplay (armas, escudos)','r','Alta demanda em época de evento',false],
+[20,1,'Tabuleiros e superfícies de batalha modulares','f','PETG resiste melhor — diferencial',false],
+[21,1,'Selos e carimbos de cera (estampas medievais)','r','Presente criativo, fácil de enviar',false],
+[22,1,'Placa de mapa de campanha gravada + miniaturas','lrc','Kit completo para mestre de RPG',false],
+[23,1,'Miniaturas de animais fantásticos (unicórnios, grifo)','r','Público feminino + infantil + colecionadores',false],
+[24,1,'Chaveiros de miniaturas de resina','r','Produto acessível, alto volume',false],
+[25,1,'Miniatura personalizada do cliente (D&D OC)','r','🔥 Produto personalizado = margem máxima',true],
+// === SEÇÃO 2: JOALHERIA (20) ===
+[26,2,'Brincos em resina com flores secas ou glitter','r','🔥 Best-seller perene, fotos bonitas',true],
+[27,2,'Anéis de resina moldados (transparente, colorido)','mrc','Usa molde de silicone + resina de fundição',false],
+[28,2,'Pingentes personalizados com foto ou texto','r','Presente de alto valor emocional',false],
+[29,2,'Pulseiras e braceletes de resina colorida','rm','Alta rotatividade, produção em lote',false],
+[30,2,'Broche 3D de personagem em resina pintado','r','Colecionável e acessório ao mesmo tempo',false],
+[31,2,'Brincos de madeira/acrílico gravados a laser','l','🔥 Custo baixo, visual premium',true],
+[32,2,'Colar com pingente de madeira com nome gravado','l','Presente personalizado sempre vende',false],
+[33,2,'Bracelete de couro gravado a laser','l','Visual artesanal rústico, muito buscado',false],
+[34,2,'Hair clips e tiaras de resina temáticos','r','Tendência em alta — público jovem feminino',false],
+[35,2,'Peças de bijuteria em resina com inclusões reais','mrc','Flores, conchas, folhas preservadas',false],
+[36,2,'Porta-joias organizador em resina 12K','r','Detalhe impressionante — fotos vendem sozinhas',false],
+[37,2,'Alianças de madeira exótica gravadas a laser','l','Nicho de casamento — ticket alto',false],
+[38,2,'Brincos assimétricos madeira + resina','lrc','Tendência editorial — fotos únicas',false],
+[39,2,'Moldes de silicone para brincos (vender o molde)','m','Vender para outros artesãos — escala',true],
+[40,2,'Chaveiros personalizados de resina','r','Volume alto, ticket baixo mas constante',false],
+[41,2,'Tag de pet personalizada (nome do animal)','l','🔥 Mercado pet explodindo no BR',true],
+[42,2,'Porta-óculos de bancada (personalizado com nome)','flc','Presente útil + personalizado',false],
+[43,2,'Apliques de resina para customização de roupas','r','Nicho de moda customizada crescendo',false],
+[44,2,'Clip de gravata e abotoaduras gravadas','l','Presente corporativo e para noivos',false],
+[45,2,'Magnetos decorativos em resina','mrc','Produto de baixo custo, presente criativo',false],
+// === SEÇÃO 3: DECORAÇÃO (25) ===
+[46,3,'Vasos decorativos em resina (efeito mármore, galaxy)','mrc','🔥 Pinterest e Instagram lotados',true],
+[47,3,'Quadros decorativos em madeira gravados a laser','l','Frases, mandalas, retratos — muito versátil',false],
+[48,3,'Luminária de madeira com corte a laser (LED interno)','l','Visual impactante, ticket R$80–200',false],
+[49,3,'Bandeja de resina epóxi (efeito oceano, mármore)','mrc','🔥 Tendência forte, alto ticket, fotos lindas',true],
+[50,3,'Porta-velas geométrico (FDM ou laser)','fl','Design moderno + vela perfumada = kit',false],
+[51,3,'Mapa da cidade em madeira gravado (presente para casal)','l','Presente de namoro/casamento — ticket R$150+',false],
+[52,3,'Coaster (porta-copos) de resina epóxi','mrc','Kit 4 unidades — presente corporativo',false],
+[53,3,'Vaso de parede modular (wall planter) em PETG','f','PETG resiste à umidade — ideal para plantas',false],
+[54,3,'Porta-retrato personalizado em madeira','l','Presente de aniversário e Dia das Mães',false],
+[55,3,'Relógio de madeira com gravação + ponteiros em resina','lrc','Produto premium, ticket R$200–400',false],
+[56,3,'Enfeites de parede geométricos (hexágonos modulares)','fr','Muito popular no Pinterest',false],
+[57,3,'Letreiro de madeira com nome da família','l','Presente de inauguração de casa, casamento',false],
+[58,3,'Estatuetas decorativas de gesso/resina (usando molde)','m','Produção em escala com molde de silicone',false],
+[59,3,'Organizador de escritório modular personalizado','flc','Home office = demanda constante',false],
+[60,3,'Mandala decorativa em MDF cortada a laser','l','Decoração espiritual/zen — mercado amplo',false],
+[61,3,'Luminária de resina com formas orgânicas e LED','rfc','Produto Instagram-worthy',false],
+[62,3,'Espelho com moldura de madeira gravada','l','Decoração boho/artesanal em alta',false],
+[63,3,'Cachepô geométrico de plantas em PETG','f','Nicho de plantas = explosivo',false],
+[64,3,'Peso de papel em resina (efeito Galaxy/oceano)','mrc','Presente corporativo diferenciado',false],
+[65,3,'Plaquinha de porta com nome do quarto','l','Quarto infantil, home office, escritório',false],
+[66,3,'Difusor de aroma em resina (com palitos)','rmc','Decoração + aromaterapia = tendência',false],
+[67,3,'Letra 3D de parede (nome bebê, inicial família)','l','Chá de bebê e quarto infantil',false],
+[68,3,'Bola de neve decorativa em resina e silicone','mrc','Presente natalino + decoração',false],
+[69,3,'Suporte de livros temático (FDM + laser)','flc','Nichos de literatura e decoração juntos',false],
+[70,3,'Calendário perpétuo em madeira gravado','l','Presente corporativo e de escritório',false],
+// === SEÇÃO 4: PET (15) ===
+[71,4,'Plaquinha de identificação do pet gravada a laser','l','🔥 Nome + telefone personalizados',true],
+[72,4,'Comedouro elevado personalizado com nome','flc','Nome do pet gravado — presente fofo',false],
+[73,4,'Miniatura do pet em resina (escultura customizada)','r','🔥 Alto ticket — dono paga qualquer valor',true],
+[74,4,'Porta-tratinho (petisco) em madeira gravada','l','Decoração de cozinha + pet = nicho duplo',false],
+[75,4,'Moldura memorativa para foto do pet falecido','l','Especial para pets falecidos — muito emocional',false],
+[76,4,'Brinquedo interativo para gatos (PETG atóxico)','f','PETG atóxico — mais seguro que PLA',false],
+[77,4,'Impressão da patinha do pet em resina (memorial)','mrc','Molda a patinha real e cria escultura',false],
+[78,4,'Casa de passarinho decorativa com gravação','lf','Artesanal + funcional + decorativo',false],
+[79,4,'Plaquinha de cama do pet personalizada','l','Nome + raça + emoji — muito compartilhado',false],
+[80,4,'Chaveiro com rosto do pet em resina','r','Presente para donos de pet',false],
+[81,4,'Funil anti-lambida (cone elizabetano) em PETG','f','PETG atóxico ideal para pets',false],
+[82,4,'Quadro genealógico de raça em madeira','l','Criadores de cães/gatos — nicho premium',false],
+[83,4,'Organizador de acessórios do pet','flc','Coleiras, brinquedos, petiscos',false],
+[84,4,'Tábua "Bem-vindo, sou o [nome do pet]"','l','Porta de casa — muito fofo e compartilhado',false],
+[85,4,'Molde de biscoito artesanal de pet','m','Vende o molde para fabricantes — escala',false],
+// === SEÇÃO 5: INFANTIL (20) ===
+[86,5,'Letras do alfabeto 3D para quarto de bebê','f','🔥 Chá de bebê — presente muito buscado',true],
+[87,5,'Quebra-cabeça 3D educativo (animais, frutas)','f','Montessori — nicho em alta entre pais',false],
+[88,5,'Jogo de encaixe de formas geométricas','fl','Brinquedo educativo Montessori',false],
+[89,5,'Nome do bebê em letras de madeira decorativas','l','Decoração de quarto infantil personalizada',false],
+[90,5,'Abacô e contador de madeira gravado','flc','Material pedagógico premium',false],
+[91,5,'Bonecos de personagem favorito da criança','rf','Personalizado — qualquer personagem',false],
+[92,5,'Mapa do Brasil/mundo em madeira (puzzle geográfico)','l','Educativo + decorativo para escola e casa',false],
+[93,5,'Peças de encaixe de construção (tipo LEGO) custom','f','Pais buscam alternativas ao Lego',false],
+[94,5,'Kit de cozinha infantil de brinquedo','flc','Brinquedo de faz-de-conta premium',false],
+[95,5,'Régua de altura personalizada em madeira','l','Decoração de quarto infantil + presente',false],
+[96,5,'Caixa de memórias do bebê (1º ano)','flc','Baú de madeira gravado — presente emocional',false],
+[97,5,'Fantasia e máscara de super-herói para criança','rfc','Halloween e festa de aniversário',false],
+[98,5,'Jogo da memória temático em madeira','l','Personalizado com fotos da família',false],
+[99,5,'Spinner e fidget toys anti-ansiedade','f','Autismo e TDAH — mercado especializado',false],
+[100,5,'Dominó e jogos clássicos personalizados em madeira','lf','Presente para família inteira',false],
+[101,5,'Tangram e puzzle de madeira personalizado','lf','Material pedagógico escolar',false],
+[102,5,'Dinossauros 3D articulados (print-in-place)','f','🔥 Viral nas redes sociais',true],
+[103,5,'Dragão articulado print-in-place','f','🔥🔥 Um dos produtos mais vendidos de FDM do mundo',true],
+[104,5,'Carimbos de madeira para escola/artesanato','l','Materiais escolares personalizados',false],
+[105,5,'Lousinha portátil personalizada para estudos','flc','Estudo em casa — home school em alta',false],
+// === SEÇÃO 6: CASAMENTO (20) ===
+[106,6,'Convite de casamento em madeira gravado','l','🔥 Produto premium que fica como lembrança',true],
+[107,6,'Plaquinha de assento (escolta) para casamento','lf','100–200 unidades por evento = lote grande',false],
+[108,6,'Topo de bolo personalizado (noivos, aniversário)','rlc','Alta demanda permanente',true],
+[109,6,'Lembrancinhas de casamento (porta-rolha, imã) gravadas','l','100–300 unidades = pedido único grande',false],
+[110,6,'Livro de assinaturas em madeira para casamento','l','Alternativa ao álbum tradicional — trend',false],
+[111,6,'Caixinha de bem-casado personalizada','lfc','Lotes de 50–200 peças',false],
+[112,6,'Buquê eterno em resina (flores reais encapsuladas)','rlc','🔥 Presente único — preserva o buquê',true],
+[113,6,'Porta-guardanapo de madeira gravado','l','Decoração de mesa de casamento',false],
+[114,6,'Buquê de noiva articulado em resina','rlc','Imortal, diferente — alta margem',false],
+[115,6,'Kit festa de aniversário temático personalizado','lfc','Topo de bolo + plaquinhas + tags = kit',false],
+[116,6,'Porta-bolo de aniversário com nome gravado','l','Presente de aniversário + decoração',false],
+[117,6,'Caixa de chá-revelação (presente)','flc','Produto viral de chá-revelação',false],
+[118,6,'Aliança de madeira com incrustação de resina colorida','lrc','Casamentos bohô/natureza',false],
+[119,6,'Props fotográficos para ensaio (moldura, plaquinhas)','flc','Ensaios de gestante, bebê, família',false],
+[120,6,'Porta-vinho personalizado para casamento','l','Presente de casamento premium',false],
+[121,6,'Urna para chá de bebê (votação do nome)','flc','Decoração de chá de bebê interativa',false],
+[122,6,'Caixinha de pedido de casamento personalizada','lrc','🔥 Alto apelo emocional = alto ticket',true],
+[123,6,'Caixa de vinho "Abrir em X anos" gravada','l','Presente de casamento único',false],
+[124,6,'Neon de madeira iluminado (LED + laser)','lfc','Decoração de festa — viral no Instagram',false],
+[125,6,'Tag de presente personalizada em madeira/acrílico','l','Lote grande para evento — lucrativo',false],
+// === SEÇÃO 7: TECH (25) ===
+[126,7,'Suporte de celular de mesa com carregador embutido','flc','PETG resistente ao calor',false],
+[127,7,'Suporte de headset/headphone para monitor','flc','Gamer + home office — nicho duplo',false],
+[128,7,'Case personalizado de controle (PS5/Xbox)','f','Gamer paga bem por customização',false],
+[129,7,'Organizador de cabos de mesa','flc','Setup gamer/home office — muito buscado',false],
+[130,7,'Suporte ergonômico para notebook','f','PETG mais resistente e durável que MDF',false],
+[131,7,'Dock station customizada para mesa gamer','flc','Hub para todos os acessórios',false],
+[132,7,'Suporte de parede para controles de videogame','fl','Gamer room organizado — tendência',false],
+[133,7,'Estação de trabalho modular (porta-canetas, clips)','flc','Presente corporativo + home office',false],
+[134,7,'Peças de reposição e adaptadores customizados','f','Serviço: "manda a peça quebrada"',true],
+[135,7,'Case para Raspberry Pi temático','f','Comunidade maker/tech — muito fiel',false],
+[136,7,'Plaquinha de wifi + senha decorativa para casa','lf','Produto simples, muito compartilhado',false],
+[137,7,'Capa customizada para teclado mecânico','fr','Comunidade teclado mecânico — apaixonada',false],
+[138,7,'Suporte de mesa para tablet/iPad','f','Trabalho e estudo — demanda constante',false],
+[139,7,'Placa de endereço + número da casa em PETG + laser','flc','Produto de alto giro, decoração externa',false],
+[140,7,'Fixadores e organizadores modulares para ferramentas','f','Oficina doméstica — muito buscado',false],
+[141,7,'Porta-cabeça de chuveiro (wall mount)','f','Produto utilitário de banheiro',false],
+[142,7,'Suporte para bobina de filamento 3D','f','Vende para outros makers — nicho fiel',false],
+[143,7,'Caixa de ferramentas modular customizada','flc','Organização de marceneiro/eletricista',false],
+[144,7,'Suporte de cartão de visita com nome gravado','fl','Presente corporativo de escritório',false],
+[145,7,'Caixa organizadora de maquiagem personalizada','flc','Beauty influencer + maquiagem = nicho enorme',false],
+[146,7,'Suporte de vela rígido para fabricantes de velas','f','Acessório para artesãos de velas',false],
+[147,7,'Organizador de gaveta modular','flc','Home office + cozinha — muito prático',false],
+[148,7,'Manga protetora de cabo de carregador','f','Produto simples de alto giro',false],
+[149,7,'Painel gamer de parede (logo time/jogo gravado)','flc','Decoração de quarto gamer',false],
+[150,7,'Estojo modular para bordado/costura/artesanato','f','Organizador de materiais artesanais',false],
+// === SEÇÃO 8: GASTRONOMIA (15) ===
+[151,8,'Tábua de charcutaria/frios personalizada','l','🔥 Muito popular — presente premium',true],
+[152,8,'Porta-temperos de parede personalizado','l','Decoração de cozinha funcional',false],
+[153,8,'Tábua de corte com nome da família gravado','l','Presente de inauguração de casa',false],
+[154,8,'Moldes de silicone para chocolate/fondant','m','🔥 Vender para confeiteiros — enorme',true],
+[155,8,'Molde de bolo em silicone (formas customizadas)','m','Confeitaria personalizada — nicho crescente',false],
+[156,8,'Porta-vinho de parede em madeira','l','Decoração de sala/cozinha',false],
+[157,8,'Enfeite de cupcake/bolo temático em madeira','l','Confeiteiros encomendam em lote',false],
+[158,8,'Plaquinha de cardápio (chalkboard) personalizada','l','Menu de restaurante, buffet, bar',false],
+[159,8,'Suporte de papel toalha/papel alumínio personalizado','flc','Utilitário de cozinha personalizado',false],
+[160,8,'Cardápio de restaurante em madeira gravado','l','B2B — vender para bares e restaurantes',false],
+[161,8,'Suporte de taça de vinho em resina','rmc','Decoração de mesa de jantar premium',false],
+[162,8,'Caixa de chá personalizada em madeira','l','Presente para apreciadoras de chá',false],
+[163,8,'Porta-copos de churrasco personalizado','l','Churrasqueiro BR — mercado enorme',false],
+[164,8,'Utensílios com cabo personalizado gravado','lf','Espátulas e colheres com detalhe artesanal',false],
+[165,8,'Placa de madeira "Bem-vindo à nossa cozinha"','l','Decoração residencial — presentes de Natal',false],
+// === SEÇÃO 9: MODA (15) ===
+[166,9,'Fivela de cinto customizada em resina/laser','rl','Streetwear — peça única e exclusiva',false],
+[167,9,'Patch de couro gravado a laser para jaqueta','l','Customização de roupas — muita demanda',false],
+[168,9,'Óculos de sol customizado (armação impressa)','rf','Peça única — fashion + impressão 3D',false],
+[169,9,'Cinto de couro gravado com motivo personalizado','l','Western/country + streetwear crossover',false],
+[170,9,'Botão e acessório de roupa em resina (costura)','r','Nicho de costura artesanal/alfaiataria',false],
+[171,9,'Alfinete decorativo (pin) de terno/blusa','rl','Moda formal + streetwear = pin buttons',false],
+[172,9,'Carteira de couro gravada (minimalista)','l','Presente masculino premium',false],
+[173,9,'Capacete de cosplay (partes impressas)','frc','Cosplay premium — cliente investe muito',false],
+[174,9,'Pochete/bolsa de couro com gravação exclusiva','l','Acessório de moda exclusivo',false],
+[175,9,'Amuleto/pingente de moda (formato exclusivo)','r','Fashion + espiritualidade = crescimento',false],
+[176,9,'Customização de tênis com gravação a laser','l','Serviço premium de customização',true],
+[177,9,'Presilha e gancho de roupa temático','fr','Acessório utilitário com design exclusivo',false],
+[178,9,'Bota texana com gravação floral/étnica','l','Nicho sertanejo/country — explosivo no BR',false],
+[179,9,'Suporte/display de óculos (loja/casa)','f','Produto de loja + uso doméstico',false],
+[180,9,'Porta-boné de parede em madeira/PETG','flc','Streetwear/sneaker head — muito compartilhado',false],
+// === SEÇÃO 10: B2B (20) ===
+[181,10,'Placa de inauguração de empresa em madeira/acrílico','lfc','🔥 B2B de alto ticket — recompra garantida',true],
+[182,10,'Plaquinha de departamento/sala em escritório','l','Empresas compram em lote',false],
+[183,10,'Troféu e premiação personalizada','lrc','Eventos corporativos, esportes, escolas',false],
+[184,10,'Maquete arquitetônica (escala 1:100)','flc','Arquitetos e imobiliárias pagam bem',false],
+[185,10,'Logo 3D da empresa em madeira para recepção','l','Identidade visual de escritórios',false],
+[186,10,'Kit de boas-vindas para funcionário novo','lfc','Empresas de RH adoram — pedido recorrente',true],
+[187,10,'Crachá personalizado em acrílico/madeira','l','Lotes de 10–100 unidades',false],
+[188,10,'Peças de marketing físico (maquete de produto)','rlc','Protótipos e amostras para marcas',false],
+[189,10,'Protótipo funcional de produto em PETG','f','Serviço B2B para startups e inventores',false],
+[190,10,'Sinalização de banheiro/saída em acrílico gravado','l','Obrigatório por lei — demanda constante',false],
+[191,10,'Display de produto para loja (expositor em madeira)','l','Varejo físico — pedido recorrente',false],
+[192,10,'Stand de cartão de visita personalizado','flc','Escritórios, salões, clínicas',false],
+[193,10,'Troféu/martelo de leiloeiro personalizado','lrc','Nicho jurídico — produto colecionável',false],
+[194,10,'Régua personalizada para escritório (brinde)','l','Brindes corporativos em lote',false],
+[195,10,'Modelo anatômico para clínicas (dente, osso)','rf','Odontologia e medicina — alta precisão',false],
+[196,10,'Painel de informações de empresa (mural)','lfc','Decoração de recepção corporativa',false],
+[197,10,'Kit para clínica (porta-escova, objetos) gravado','lrc','B2B para consultórios — pedido por lote',false],
+[198,10,'Medalha esportiva personalizada (corridas, crossfit)','lfc','Eventos esportivos — 50–500 unidades',false],
+[199,10,'Quadro de homenagem para funcionário do mês','l','RH corporativo — pedido recorrente mensal',false],
+[200,10,'🏆 Serviço sob demanda — "manda o arquivo, imprimimos"','rflmc','🔥 Serviço + produto — escala ilimitada',true],
+// === SEÇÃO 11: ESPORTES & FITNESS (40) ===
+[201,11,'Suporte de haltere personalizado','f','PETG resistente — ideal para academia',false],
+[202,11,'Porta-garrafa de hidratação para bicicleta','f','Ciclismo urbano — tendência BR',false],
+[203,11,'Protetor de canela personalizado (shin guard)','fr','FDM estrutura + resina detalhes',false],
+[204,11,'Plaquinha de PR (Personal Record) para academia','l','Motivação + decoração de academia',false],
+[205,11,'Suporte de barra pull-up na porta','f','Home gym — explosão pós-pandemia',true],
+[206,11,'Quadro de metas de treino em madeira','l','Coaching esportivo e academia',false],
+[207,11,'Troféu de corrida personalizado','lrc','Eventos de corrida — lotes grandes',false],
+[208,11,'Case para smartwatch de academia','f','Apple Watch, Garmin — muito buscado',false],
+[209,11,'Portador de garrafa de squeeze para corrida','f','Running — nicho em altíssimo crescimento',false],
+[210,11,'Pulseira de monitoramento de séries de treino','fm','Tracker de séries e repetições',false],
+[211,11,'Plaquinha motivacional gravada para academia','l','Decoração de home gym',false],
+[212,11,'Suporte de corda de pular (wall mount)','f','Organização de home gym',false],
+[213,11,'Marcador de postura para yoga (bloco suporte)','f','Yoga e pilates — nicho feminino forte',false],
+[214,11,'Chaveiro de medalha de corrida em resina','lr','Memória de conquista esportiva',false],
+[215,11,'Suporte de raquete de tênis/beach tennis','fl','🔥 Beach tennis explodiu no BR',true],
+[216,11,'Capacete de bike decorado com adesivo 3D','lr','Personalização de equipamento',false],
+[217,11,'Gabarito de treino HIIT (tabela de exercícios)','l','Placa de home gym',false],
+[218,11,'Suporte de kettlebell pequeno','f','Organização de home gym',false],
+[219,11,'Plaquinha de equipamento de academia','l','Academias comerciais — lotes de placas',false],
+[220,11,'Organizador de bands e elásticos de treino','f','Acessório de home gym',false],
+[221,11,'Porta-protetor bucal de atleta','f','Jiu-jitsu, boxe, rugby — nicho combate',false],
+[222,11,'Suporte de skate na parede','fl','Skate street — nicho jovem',false],
+[223,11,'Troféu de surf personalizado','rl','Surf — nicho forte no litoral BR',false],
+[224,11,'Plaquinha de trilha (waymarker) personalizada','lf','Trilheiros e ultra maratonistas',false],
+[225,11,'Modelo de articulação do joelho (fisioterapia)','rf','Fisiologistas e fisioterapeutas',false],
+[226,11,'Caneleira de futebol customizada','f','Futebol — maior nicho esportivo do BR',true],
+[227,11,'Nome gravado em chuteira','l','Personalização de chuteira',false],
+[228,11,'Grip de escalada personalizado','f','Escalada indoor em alta',false],
+[229,11,'Insígnia de time de futebol 3D','rf','Decoração de quarto de fã de futebol',false],
+[230,11,'Display de bicicleta (número de corrida)','lf','Ciclismo de estrada e mountain bike',false],
+[231,11,'Plaquinha "Zona de treino — não interrompa"','l','Decoração de home gym',false],
+[232,11,'Suporte para foam roller','f','Recuperação muscular — muito popular',false],
+[233,11,'Porta-toalha de academia personalizado','fl','Academia comercial — lote',false],
+[234,11,'Troféu de pet run personalizado','lr','Corrida com cachorro — nicho pet + esporte',false],
+[235,11,'Case de cinturão de levantamento de peso','f','Powerlifting — nicho crescente',false],
+[236,11,'Suporte de cabo de speed bag (saco de boxe)','f','Boxe fitness em alta',false],
+[237,11,'Alvo de tiro com arco em MDF','l','Tiro esportivo — nicho específico',false],
+[238,11,'Suporte de bastão de hockey','fl','Hockey no gelo e patinação',false],
+[239,11,'Carimbo de time esportivo para eventos','l','Personalização de eventos esportivos',false],
+[240,11,'Kit completo de home gym organizer','flc','PETG + laser + múltiplas peças',false],
+// === SEÇÃO 12: MÚSICA (40) ===
+[241,12,'Suporte de violão na parede','fl','Decoração de sala + funcional',false],
+[242,12,'Capo de violão personalizado com nome','fr','Presente para violonista',false],
+[243,12,'Palheta (pick) de guitarra customizada','rf','Palheta única — presente de músico',false],
+[244,12,'Suporte de ukulele na parede','fl','Ukulele virou tendência',false],
+[245,12,'Plaquinha de acordes na parede (decoração)','l','Decoração de sala de música',false],
+[246,12,'Organizador de cabo de guitarra (wall mount)','fl','Setup de estúdio organizado',false],
+[247,12,'Case impresso para pedaleira de guitarra','f','Guitarrista — nicho fiel',false],
+[248,12,'Suporte de microfone de mesa customizado','fl','Home studio — crescimento enorme',false],
+[249,12,'Strap lock de guitarra customizado','f','Segurança + personalização',false],
+[250,12,'Mini-guitarra decorativa em resina','r','Colecionável musical',false],
+[251,12,'Plaquinha de sala de ensaio/estúdio','l','Decoração de studio',false],
+[252,12,'Suporte de teclado MIDI modular','fl','Produtor musical — nicho premium',false],
+[253,12,'Pedalboard organizer (suporte de pedais)','f','Guitarrista profissional',false],
+[254,12,'Pulseira de nó de guitarra em resina','rm','Acessório de músico',false],
+[255,12,'Enfeite de nota musical para parede','lf','Decoração de quarto e sala',false],
+[256,12,'Suporte de arco de violino','fl','Violinista — nicho clássico',false],
+[257,12,'Clave de sol/notas musicais decorativas','l','Decoração de escola de música',false],
+[258,12,'Strap de guitarra em couro gravado a laser','l','Produto premium para guitarrista',true],
+[259,12,'Caixinha de música personalizada','fl','Presente musical emocional',false],
+[260,12,'Suporte de metrônomo de mesa','fl','Músico estudante e professor',false],
+[261,12,'Set list board de madeira (plaquinha de show)','l','Plaquinha decorativa de músico',false],
+[262,12,'Trocador de corda de violão (ferramenta)','f','Acessório prático de músico',false],
+[263,12,'Case de celular temático de música','fr','iPhone de músico customizado',false],
+[264,12,'Suporte de partitura de mesa','fl','Músico estudante e professor',false],
+[265,12,'Decoração de estúdio em madeira (nome do estúdio)','l','Identidade do estúdio home',false],
+[266,12,'Pickguard (escudo) de guitarra customizado','l','Substituição decorativa',false],
+[267,12,'Suporte de pandeiro na parede','fl','Percussionista — nicho brasileiro',false],
+[268,12,'Caixinha porta-palhetas decorativa','lf','Presente de músico',false],
+[269,12,'Insígnia de banda em resina','r','Logo da banda em 3D',false],
+[270,12,'Tag de instrumento musical personalizada','l','Identificar instrumento na capa',false],
+[271,12,'Mini-piano decorativo em resina','rf','Colecionável para pianista',false],
+[272,12,'Suporte de controlador de DJ','fl','DJ — nicho muito específico',false],
+[273,12,'Suporte de headphone de DJ (wall/desk)','fl','Setup de DJ organizado',false],
+[274,12,'Guizo decorativo (instrumento ritmo) customizado','lf','Percussão folk/étnica',false],
+[275,12,'Plaquinha "Gravando — Silêncio!" para estúdio','lf','Estúdio home/profissional',false],
+[276,12,'Knob customizado para sintetizador/mixer','rf','Músico eletrônico — nicho exclusivo',false],
+[277,12,'Suporte de boom arm de microfone','f','Streamer e podcaster',false],
+[278,12,'Case de drumstick personalizado','f','Baterista — presente criativo',false],
+[279,12,'Decoração temática de vinil (LP decorativo)','l','Decoração de sala de estar',false],
+[280,12,'Kit completo de home studio (múltiplas peças)','flrc','Presente premium para músico',false],
+// === SEÇÃO 13: AUTOMOTIVO (40) ===
+[281,13,'Plaquinha de garagem personalizada com nome','l','🔥 Muito popular no segmento auto',true],
+[282,13,'Chaveiro com modelo do carro em resina','r','Presente para apaixonado por carro',false],
+[283,13,'Emblema/logo de carro em 3D customizado','rf','Personalização de veículo',false],
+[284,13,'Suporte de celular para moto customizado','f','Motociclista — nicho muito fiel',false],
+[285,13,'Porta-capacete de parede','fl','Decoração de garagem',false],
+[286,13,'Organizador de ferramentas de garagem','fl','Oficina doméstica organizada',false],
+[287,13,'Retrovisor de moto decorativo personalizado','lr','Acessório de personalização',false],
+[288,13,'Plaquinha "Cuidado: moto na garagem"','l','Segurança + decoração',false],
+[289,13,'Suporte de pneu de moto decorativo','f','Garagem/showroom de moto',false],
+[290,13,'Miniatura do seu carro/moto favorito em resina','r','🔥 Presente personalizado premium',true],
+[291,13,'Etiqueta de bagageiro de moto personalizada','l','Moto viajante — nicho adventure',false],
+[292,13,'Emblema de clube de moto em resina','lr','Clubes de moto pagam por itens exclusivos',false],
+[293,13,'Porta-ferramentas modular para oficina','fl','Organização de mecânico',false],
+[294,13,'Plaquinha "Estacionamento exclusivo do [modelo]"','l','Humor + decoração de garagem',false],
+[295,13,'Letreiro de garagem personalizado (nome + ano)','l','Decoração de garagem premium',false],
+[296,13,'Suporte de óculos de sol para quebra-sol do carro','f','Acessório de carro funcional',false],
+[297,13,'Organizador de porta-malas modular','f','Organização de carro',false],
+[298,13,'Case de compressor de ar portátil','f','Proteção de equipamento',false],
+[299,13,'Personalização de banco de moto (gravação couro)','l','Upgrade estético de moto',false],
+[300,13,'Plaquinha de número de corrida de karting','lf','Kartódromo e corridas amadoras',false],
+[301,13,'Grips personalizados de guidão','fl','Motociclista personaliza tudo',false],
+[302,13,'Suporte de GPS/smartphone no painel','f','Viagem de carro e moto',false],
+[303,13,'Protetor de tanque de moto (partes)','f','Personalização de moto',false],
+[304,13,'Chaveiro com placa do carro','l','Presente para motorista',false],
+[305,13,'Display de pódio de corrida personalizado','fl','Fã de automobilismo',false],
+[306,13,'Suporte de manopla extra de moto','f','Moto viajante e aventureiro',false],
+[307,13,'Miniatura de caminhão (presente para caminhoneiro)','fr','🔥 Mercado de caminhoneiros é enorme no BR',true],
+[308,13,'Emblema de clube de carro antigo (old car)','lr','Apaixonados por carros clássicos',false],
+[309,13,'Portão de controle de revisão do veículo','l','Organização de manutenção',false],
+[310,13,'Plaquinha de revisão do carro (data gravada)','l','Lembrete visual de manutenção',false],
+[311,13,'Suporte de extintor dentro do carro','f','Segurança veicular',false],
+[312,13,'Organizador de caçamba de pickup','f','Mercado de picapes é enorme no BR',false],
+[313,13,'Case de chave canivete personalizada','fr','Presente para motorista',false],
+[314,13,'Enfeite de antena de carro temático','fr','Personalização divertida',false],
+[315,13,'Suporte de câmera action para moto/carro','f','Moto viajante e aventureiro',false],
+[316,13,'Protetor de calça (corrente de bicicleta)','f','Ciclista urbano — utilidade real',false],
+[317,13,'Emblema do time de futebol no carro','lr','Futebol + carro = nicho duplo',false],
+[318,13,'Plaquinha VIP "Vaga reservada para [nome]"','l','Humor + decoração — viral',false],
+[319,13,'Organizador de documentos de carro','fl','Porta-luvas organizado',false],
+[320,13,'Miniatura personalizada do carro favorito (encomenda)','rf','Serviço premium de colecionador',false],
+// === SEÇÃO 14: SAÚDE & CLÍNICAS (40) ===
+[321,14,'Modelo dental 3D de alta precisão','r','🔥 Resina 12K = qualidade clínica real',true],
+[322,14,'Guia cirúrgico odontológico impressão 3D','r','Serviço para dentistas — alto ticket',true],
+[323,14,'Modelo de crânio para estudo anatômico','rf','Medicina, fisioterapia, educação',false],
+[324,14,'Organizador de consultório médico','fl','Clínica organizada — pedido em lote',false],
+[325,14,'Plaquinha de sala de espera (clínica)','l','Identidade visual de clínica',false],
+[326,14,'Modelo de coluna vertebral articulada','fr','Fisioterapia e educação médica',false],
+[327,14,'Prótese de dedo provisória (emergência)','fr','Uso em protocolos de emergência',false],
+[328,14,'Modelo de coração para cardiologistas','fr','Material didático médico',false],
+[329,14,'Suporte de aparelho auditivo personalizado','f','Produto de acessibilidade',false],
+[330,14,'Organizador de medicamentos semanal','fl','Idoso e paciente crônico',false],
+[331,14,'Modelo de ouvido para otorrinolaringologista','rf','Especialista médico',false],
+[332,14,'Plaquinha personalizada de médico/dentista','l','Identidade profissional',false],
+[333,14,'Suporte de óculos para clínica','fl','Uso clínico e doméstico',false],
+[334,14,'Porta-prontuário de parede','fl','Organização de consultório',false],
+[335,14,'Suporte de termômetro e oxímetro','f','Organização de consultório/farmácia',false],
+[336,14,'Case de estetoscópio personalizado','fl','Presente para médico/enfermeiro',false],
+[337,14,'Modelo de olho para oftalmologistas','r','Alta precisão da resina',false],
+[338,14,'Guia de postura (fisioterapia)','fl','Recurso visual de fisioterapeuta',false],
+[339,14,'Tala de dedo customizada em PETG','f','Produto funcional de saúde',false],
+[340,14,'Organizador de sala de vacinas','f','Unidade de saúde pública',false],
+[341,14,'Modelo de pé para podólogos','rf','Especialista de pé — nicho específico',false],
+[342,14,'Plaquinha personalizada de nutricionista','l','Identidade de consultório',false],
+[343,14,'Porta-receituário personalizado','lf','Médico/dentista personaliza tudo',false],
+[344,14,'Case de seringa (treinamento de injeção)','f','Simulação de procedimento médico',false],
+[345,14,'Plaquinha de psicólogo com frase motivacional','l','Decoração de consultório',false],
+[346,14,'Organizador de suplementos de academia','fl','Atleta e praticante de fitness',false],
+[347,14,'Display de equilíbrio (treino propriocepção)','f','Fisioterapia e reabilitação',false],
+[348,14,'Modelo de articulação do joelho','rf','Fisioterapia e ortopedia',false],
+[349,14,'Suporte de monitor de pressão arterial','f','Hipertenso e clínica',false],
+[350,14,'Plaquinha de veterinário personalizada','l','Clínica veterinária',false],
+[351,14,'Molde para bandagem/órtese personalizada','m','Órtese customizada',false],
+[352,14,'Modelo dental para treinamento de estudantes','r','Faculdade de odontologia',false],
+[353,14,'Porta-agulha de acupuntura','f','Acupunturista — nicho oriental',false],
+[354,14,'Modelo de nervo ciático (educação)','fr','Fisioterapia e neurologia',false],
+[355,14,'Suporte de pulso ergonômico para teclado','f','Prevenção de LER — demanda enorme',false],
+[356,14,'Plaquinha de farmácia personalizada','l','Identidade de farmácia de manipulação',false],
+[357,14,'Organizador de materiais cirúrgicos','f','Bloco cirúrgico e clínica',false],
+[358,14,'Modelo de seio para mastologistas','rf','Rastreamento de câncer de mama',false],
+[359,14,'Suporte de esfigmomanômetro (aparelho de pressão)','f','Consultório médico',false],
+[360,14,'Case de EPIs de clínica','f','Proteção individual profissional',false],
+// === SEÇÃO 15: RELIGIÃO (40) ===
+[361,15,'Crucifixo personalizado em madeira gravado','l','Presente de batismo, primeira comunhão',true],
+[362,15,'Rosário 3D impresso personalizado','fr','Devoção + design exclusivo',false],
+[363,15,'Plaquinha de bênção para lar','l','Decoração religiosa residencial',false],
+[364,15,'Mandala espiritual em MDF cortada a laser','l','Decoração meditativa',false],
+[365,15,'Estatueta de Nossa Senhora em resina','rf','Devoto católico — muito fiel',false],
+[366,15,'Incensário em resina ou PETG','fr','Rituais e meditação',false],
+[367,15,'Suporte de terço personalizado','fl','Produto de devoção',false],
+[368,15,'Plaquinha com versículo bíblico gravado','l','Presente evangelizador',false],
+[369,15,'Presépio (nativity scene) impresso','fr','Natal — encomendas anuais',false],
+[370,15,'Altar portátil de madeira gravado','l','Casa e viagem',false],
+[371,15,'Colar com símbolo de fé (cruz, estrela, hamsa)','rl','Acessório de fé',false],
+[372,15,'Enfeite natalino personalizado em madeira/resina','lf','Presente de Natal',true],
+[373,15,'Anjo decorativo em resina','r','Decoração espiritual premium',false],
+[374,15,'Estatueta de Buda em resina','rf','Feng shui e espiritualidade',false],
+[375,15,'Mezuzá personalizada em madeira','l','Comunidade judaica — nicho específico',false],
+[376,15,'Decoração feng shui (portão, dragão)','lrf','Espiritualidade oriental',false],
+[377,15,'Suporte de cristais e pedras','fl','New age + espiritualidade',false],
+[378,15,'Plaquinha dos chakras','l','Decoração de espaço de meditação',false],
+[379,15,'Escultura de Ganesha em resina','rf','Espiritualidade hindu',false],
+[380,15,'Decoração de altar (Umbanda/Candomblé)','rfl','Religiões afro-brasileiras — enorme mercado',true],
+[381,15,'Símbolo do Yin Yang em madeira/resina','lr','Espiritualidade oriental — muito popular',false],
+[382,15,'Plaquinha "A paz esteja nesta casa"','l','Presente espiritual de inauguração',false],
+[383,15,'Estatueta de São Francisco de Assis','fr','Devoto de São Francisco — pet lovers',false],
+[384,15,'Árvore da vida (decoração) em MDF','l','Decoração espiritual popular',false],
+[385,15,'Conto de mala de oração (pulseira)','r','Devoção em viagem',false],
+[386,15,'Caixa sagrada para guarda-objetos de fé','lf','Organizador de objetos espirituais',false],
+[387,15,'Plaquinha personalizada para batismo','l','Lembrança de batismo',false],
+[388,15,'Porta-Mezuzá para judeus','l','Comunidade judaica no BR',false],
+[389,15,'Terço personalizado com nome em resina','rm','Presente para devoto',false],
+[390,15,'Kit de oração (rosário + case + plaquinha)','frlc','Presente espiritual premium',false],
+[391,15,'Estatueta de Iemanjá em resina','rf','Candomblé e cultura afro-brasileira',false],
+[392,15,'Plaquinha de sala de orações','l','Igreja, templo, capelania',false],
+[393,15,'Cruz de São Bento em resina','r','Proteção espiritual — muito popular',false],
+[394,15,'Decoração de Páscoa personalizada','lf','Presente pascal + decoração',false],
+[395,15,'Decoração de Natal personalizada com nome','lf','Presente de Natal único',false],
+[396,15,'Símbolo islâmico em madeira (Bismillah, mashallah)','l','Comunidade muçulmana no BR',false],
+[397,15,'Hamsa/mão de Fátima em resina ou madeira','rl','Proteção espiritual — muito vendida',false],
+[398,15,'Suporte de incenso tibetano','fl','Meditação budista',false],
+[399,15,'Olho grego decorativo em resina','rl','Proteção — tendência decorativa',false],
+[400,15,'Miniatura de templo budista em FDM','fr','Decoração espiritual oriental',false],
+// === SEÇÃO 16: JARDINAGEM (40) ===
+[401,16,'Identificador de plantas em MDF gravado','l','🔥 Nicho de plantas — enorme',true],
+[402,16,'Vaso de suculenta em PETG (resistente UV)','f','PETG aguenta sol — diferencial real',false],
+[403,16,'Sistema de irrigação por gotejo modular','f','Agricultura urbana — funcional',false],
+[404,16,'Plaquinha de jardim com nome de erva','l','Horta orgânica — muito compartilhada',false],
+[405,16,'Suporte de vaso para gradeamento/varanda','f','Apartamento sem jardim — solução',false],
+[406,16,'Mini-estufa para mudas em PETG','f','Agricultura urbana doméstica',false],
+[407,16,'Identificador de semente em resina colorida','rf','Organização de sementes',false],
+[408,16,'Rede de ancoragem para plantas trepadeiras','f','Jardim vertical',false],
+[409,16,'Adaptador de garrafa PET para irrigação','f','Sustentabilidade + jardim',false],
+[410,16,'Decoração de jardim (cogumelos, fadas, gnomos)','fr','Jardim encantado — muito procurado',false],
+[411,16,'Letreiro de jardim ("Área verde") em madeira','l','Decoração de jardim',false],
+[412,16,'Cachepô de parede externo em PETG','f','Jardim vertical de apartamento',false],
+[413,16,'Armadilha de praga ecológica (para morcego)','f','Controle orgânico de pragas',false],
+[414,16,'Case para medidor de umidade de solo','f','Monitoramento de jardim inteligente',false],
+[415,16,'Suporte de horta vertical modular','f','Horta vertical de apartamento',true],
+[416,16,'Composteira doméstica (partes modulares)','f','Sustentabilidade doméstica',false],
+[417,16,'Wind spinner decorativo para jardim','fl','Decoração cinética de jardim',false],
+[418,16,'Casinha decorativa de jardim (fadas)','fl','Jardim encantado infantil',false],
+[419,16,'Organizador de sementes em caixinha gravada','lf','Horta orgânica organizada',false],
+[420,16,'Plaquinha "Não pise na grama" decorativa','l','Jardim + humor',false],
+[421,16,'Suporte de treliça para plantas em PETG','f','Jardim vertical',false],
+[422,16,'Fonte de água decorativa de jardim','fr','Decoração de jardim premium',false],
+[423,16,'Miniatura de trator decorativo para jardim','fr','Decoração temática rural',false],
+[424,16,'Gnomo de jardim impresso 3D','fr','Decoração de jardim clássica',false],
+[425,16,'Cerca decorativa de jardim em MDF/PETG','lf','Delimitação decorativa',false],
+[426,16,'Porta-ferramentas de jardinagem','fl','Organização de jardim',false],
+[427,16,'Etiqueta de vasos resistente a chuva (PETG)','f','PETG = resistência à umidade',false],
+[428,16,'Sistema hidropônico NFT caseiro (partes)','f','Agricultura de alta tecnologia doméstica',false],
+[429,16,'Escultura de animal para jardim','fr','Decoração de jardim — colecionável',false],
+[430,16,'Plaquinha de número de lote/sítio','l','Rural — fazenda e sítio',false],
+[431,16,'Termômetro decorativo para jardim','fl','Monitoramento decorativo',false],
+[432,16,'Banco de jardim com assento personalizado','l','Móvel de jardim decorativo',false],
+[433,16,'Decoração de jardim para Halloween','fl','Sazonal — venda garantida em outubro',false],
+[434,16,'Colmeia decorativa para abelhas nativas','f','Sustentabilidade + polinizadores',false],
+[435,16,'Filtro de minhoca (vermicompostagem) modular','f','Agricultura orgânica doméstica',false],
+[436,16,'Jogo de bowling para jardim em PETG','f','Diversão ao ar livre',false],
+[437,16,'Decoração de Natal para jardim/varanda','lf','Sazonal — encomendas de outubro a dezembro',false],
+[438,16,'Protetor de torneira externa','f','Funcional + estético',false],
+[439,16,'Estrutura de cobertura para plantas (arco)','f','Horta protegida de chuva',false],
+[440,16,'Kit completo de horta urbana personalizada','flc','Presente eco-friendly premium',false],
+// === SEÇÃO 17: FOTOGRAFIA & CONTEÚDO (40) ===
+[441,17,'Suporte de câmera/gimbal customizado','fl','Setup de youtuber premium',false],
+[442,17,'Alça de câmera em couro gravada a laser','l','🔥 Fotógrafo ama personalização',true],
+[443,17,'Case de lente fotográfica impressa','f','Organização de equipamento',false],
+[444,17,'Suporte de ring light de mesa','fl','Creator de conteúdo — enorme nicho',false],
+[445,17,'Acessórios de backdrop stand modulares','f','Fotógrafo e criador de conteúdo',false],
+[446,17,'Porta-SD card e bateria organizador','fl','Organização de fotógrafo profissional',false],
+[447,17,'Lettering de nome do estúdio em madeira','l','Identidade de estúdio fotográfico',false],
+[448,17,'Suporte de drone de mesa','fl','Drone virou popular no BR',false],
+[449,17,'Case de filtro UV/ND de câmera','f','Fotógrafo profissional',false],
+[450,17,'Decoração de estúdio "Fotografia" em madeira','l','Identidade visual de estúdio',false],
+[451,17,'Grip customizado de câmera','f','Conforto + personalização',false],
+[452,17,'Plaquinha "Fotógrafo em ação — aguarde"','l','Humor + sinalização',false],
+[453,17,'Suporte de teleprompter portátil','f','Youtuber e apresentador',false],
+[454,17,'Organizador de estúdio (cabos, acessórios)','fl','Setup profissional de estúdio',false],
+[455,17,'Mini-set de cenário modular','fl','Fotógrafo de produto e culinário',false],
+[456,17,'Case de microfone Rode/Sennheiser','f','Podcaster e youtuber',false],
+[457,17,'Suporte de flash externo','f','Fotógrafo profissional',false],
+[458,17,'Clapper board personalizado (badalo)','lf','Filmagem profissional e amadora',false],
+[459,17,'Porta-crachá de imprensa personalizado','lf','Jornalista e fotógrafo de eventos',false],
+[460,17,'Moldura de câmera vintage decorativa','l','Decoração de estúdio nostálgico',false],
+[461,17,'Suporte de iPhone/GoPro para bike','f','Ciclista e aventureiro',false],
+[462,17,'Plaquinha do canal do YouTube','l','Youtuber — identidade de estúdio',false],
+[463,17,'Decoração de home studio (letras 3D)','lf','Streamer e youtuber',false],
+[464,17,'Case de bateria de câmera organizador','f','Fotógrafo profissional',false],
+[465,17,'Suporte de câmera para janela de carro','f','Vlogger e viajante',false],
+[466,17,'Suporte de headphone para estúdio','fl','Setup de estúdio organizado',false],
+[467,17,'Kit de acessórios para TikTok/Reels','fl','Creator mobile — nicho enorme',true],
+[468,17,'Decoração de fundo de vídeo (letras 3D, logo)','fl','Background de videoconferência',false],
+[469,17,'Case decorativo de câmera vintage','fl','Decoração de estúdio retrô',false],
+[470,17,'Suporte de tablet para streaming/vídeo','fl','Streamer e gamer',false],
+[471,17,'Mini-tripé customizado para smartphone','f','Creator mobile',false],
+[472,17,'Plaquinha de número de take (cena)','lf','Filme e vídeo amador',false],
+[473,17,'Câmera estenopeica impressa (pinhole camera)','f','Fotografia analógica artística',false],
+[474,17,'Case de obturador magnético','f','Fotografia de produto',false],
+[475,17,'Setup completo de streaming (organizer)','flc','Streamer profissional',false],
+[476,17,'Protetor de microfone personalizado','f','Proteção de equipamento de áudio',false],
+[477,17,'Suporte de livro/roteiro para câmera','fl','Atriz/ator de conteúdo',false],
+[478,17,'Organizer de produtos para unboxing','fl','Unboxer do YouTube',false],
+[479,17,'Plaquinha decorativa de nome do podcast','l','Podcaster — nicho crescente',false],
+[480,17,'Kit completo de criador de conteúdo (presente)','flrc','Presente para youtuber premium',false],
+// === SEÇÃO 18: NÁUTICO & OUTDOOR (40) ===
+[481,18,'Flutuante/boia de identificação de barco','f','Náutica — nicho premium',false],
+[482,18,'Nome do barco em madeira gravada a laser','l','Identidade da embarcação',true],
+[483,18,'Porta-vara de pesca modular','fl','Pescador — mercado enorme no BR',false],
+[484,18,'Case de isca artificial customizado','fl','Pescador esportivo',false],
+[485,18,'Chaveiro de âncora em resina','rl','Presente náutico',false],
+[486,18,'Plaquinha do clube náutico','l','Identidade de marina/clube',false],
+[487,18,'Organizador de caixa de pesca','fl','Pescador organizado',false],
+[488,18,'Flutuante de isca temático (peixe bóia)','fr','Pesca esportiva criativa',false],
+[489,18,'Modelo de navio/veleiro decorativo','fr','Colecionável náutico',false],
+[490,18,'Decoração náutica para área gourmet (âncora, leme)','lf','Decoração de casa à beira-mar',false],
+[491,18,'Cleat de madeira decorativo (decoração náutica)','l','Decoração de litoral',false],
+[492,18,'Porta-remo de kayak na parede','fl','Caiaquista — nicho aventura',false],
+[493,18,'Case de GPS náutico','f','Proteção de equipamento de barco',false],
+[494,18,'Suporte de binóculos para barco','f','Equipamento de embarcação',false],
+[495,18,'Âncora decorativa em resina','r','Decoração náutica de interior',false],
+[496,18,'Organizador de equipamento de mergulho','f','Mergulhador profissional e amador',false],
+[497,18,'Insígnia de clube de pesca','lr','Identidade de clube',false],
+[498,18,'Porta-molinete organizador','fl','Pescador com múltiplos equipamentos',false],
+[499,18,'Plaquinha "Pescador Profissional"','l','Humor + presente para pescador',false],
+[500,18,'Miniatura de barco pesqueiro em resina','fr','Presente para pescador',false],
+[501,18,'Suporte de boné de pesca','fl','Organização de acessórios',false],
+[502,18,'Quadro com mapa do ponto de pesca favorito','l','Presente personalizado para pescador',false],
+[503,18,'Case de kit de camping organizer','fl','Camping e trilha',false],
+[504,18,'Fogueirinha decorativa em resina','r','Decoração de aventureiro',false],
+[505,18,'Suporte de estaca de barraca','f','Camping organizado',false],
+[506,18,'Organizador de mochila de trilha','f','Trilheiro e montanhista',false],
+[507,18,'Bússola decorativa em resina','rf','Aventureiro e colecionador',false],
+[508,18,'Plaquinha de trilha (seta direcional)','lf','Marcação de trilha em madeira',false],
+[509,18,'Case de faca de camping personalizado','fl','Aventureiro e sobrevivencialista',false],
+[510,18,'Suporte de machado de parede','fl','Decoração de cabana/ranch',false],
+[511,18,'Decoração de mesa de pescador','lr','Decoração de escritório de pescador',false],
+[512,18,'Porta-chave de jet ski','lr','Presente para dono de jet ski',false],
+[513,18,'Protetor de anzol de isca artesanal','f','Organização de pesca esportiva',false],
+[514,18,'Organizador de stand up paddle','f','SUP — esporte em alta',false],
+[515,18,'Enfeite de prancha de surf decorativo','rl','Decoração de casa de surfista',false],
+[516,18,'Case de lanterna de camping','f','Proteção de equipamento outdoor',false],
+[517,18,'Marcador de mapa de trilha (topografia)','fl','Trilheiro',false],
+[518,18,'Suporte de cantil de caminhada','f','Trilha e camping',false],
+[519,18,'Mascote de clube de pesca em resina','rf','Identidade de clube',false],
+[520,18,'Kit completo do pescador (presente)','lrfc','Presente premium para pescador',false],
+// === SEÇÃO 19: PAPELARIA (40) ===
+[521,19,'Porta-lápis temático em FDM/Resina','fr','Presente escolar criativo',false],
+[522,19,'Clipe de papel customizado 3D','fr','Acessório de escritório exclusivo',false],
+[523,19,'Planner de mesa modular personalizado','fl','Produtividade — alta demanda',true],
+[524,19,'Suporte de post-it customizado','fl','Organização de escritório',false],
+[525,19,'Case de grampeador temático','f','Acessório de escritório exclusivo',false],
+[526,19,'Porta-carimbo personalizado','fl','Artesã e carimbos — nicho craft',false],
+[527,19,'Plaquinha de "Não perturbe / Em reunião"','l','Home office — muito compartilhado',false],
+[528,19,'Organizador de mesa vertical modular','fl','Escritório organizado — alto giro',false],
+[529,19,'Case de apagador de quadro','f','Professor — presente de final de ano',false],
+[530,19,'Plaquinha de professor com nome gravado','l','🔥 Presente do Dia do Professor — imensa demanda',true],
+[531,19,'Suporte de quadro magnético de parede','fl','Escritório e escola',false],
+[532,19,'Chaveiro de formatura personalizado','fr','Formatura — encomendas grandes',false],
+[533,19,'Organizador de material de aluno','fl','Volta às aulas — presente',false],
+[534,19,'Capa de caderno personalizada em MDF','l','Presente escolar',false],
+[535,19,'Suporte de livro de mesa em madeira','fl','Leitura e estudo',false],
+[536,19,'Suporte de calculadora personalizado','f','Escritório e escola',false],
+[537,19,'Porta-passaporte e documentos de viagem','fl','Viajante frequente',false],
+[538,19,'Clipe de foto de escritório em MDF','fl','Decoração de mesa',false],
+[539,19,'Suporte de agenda de mesa','fl','Organização de escritório',false],
+[540,19,'Plaquinha de mural de recados','l','Escritório e escola',false],
+[541,19,'Decoração temática de sala de aula','l','Professor decora a sala',false],
+[542,19,'Medalhão de formatura personalizado em resina','rl','Formatura — produto emocional',false],
+[543,19,'Plaquinha de bacharel/mestre/doutor','l','Conquista acadêmica — presente',false],
+[544,19,'Porta-crachá de evento personalizado','fl','Eventos corporativos',false],
+[545,19,'Certificado de destaque em madeira','l','Escola e empresa',false],
+[546,19,'Kit maker para escola (impressão 3D educativa)','f','Escola maker — tendência educacional',false],
+[547,19,'Troféu de olimpíada estudantil','lr','Escola e universidade',false],
+[548,19,'Plaquinha de "Melhor Professor" com nome','l','Presente do Dia do Professor',false],
+[549,19,'Kit de geometria 3D (sólidos de Platão)','f','Ensino de geometria tridimensional',false],
+[550,19,'Porta-régua com suporte de mesa','f','Organização escolar',false],
+[551,19,'Organizador de material de arte','fl','Artista e professor de artes',false],
+[552,19,'Porta-pendrive criativo temático','fr','Presente de formatura barato',false],
+[553,19,'Estante de mesa para livros','fl','Decoração de escritório',false],
+[554,19,'Quadro de honra em madeira (escola)','l','Motivação escolar',false],
+[555,19,'Espadim de formatura em resina','rf','Universidade militar e técnica',false],
+[556,19,'Capa de diploma personalizada em madeira','l','Presente de formatura',false],
+[557,19,'Mini-estante modular de mesa','fl','Livros + decoração + organização',false],
+[558,19,'Porta-biscoito de reunião em MDF','fl','Escritório criativo',false],
+[559,19,'Suporte de mousepad modular','f','Setup de escritório ergonômico',false],
+[560,19,'Mascote escolar impresso (presente de turma)','fr','Presente coletivo de turma',false],
+// === SEÇÃO 20: FANDOM & K-POP (40) ===
+[561,20,'Lightstick de K-pop inspirado em fandom','fr','🔥 Fã de K-pop paga qualquer valor',true],
+[562,20,'Porta-photocard de idol customizado','fl','K-pop — organização de photocards',false],
+[563,20,'Standee de idol customizado','fl','Display de bias favorito',false],
+[564,20,'Pulseira de fandom temática em resina','rm','Acessório de fã',false],
+[565,20,'Display holder de álbum de K-pop','fl','Colecionador de álbuns',false],
+[566,20,'Colar com símbolo de fandom em resina','r','Acessório de fã',false],
+[567,20,'Porta-poster de idol','fl','Decoração de quarto de fã',false],
+[568,20,'Máscara de personagem de anime','fr','Cosplay e decoração',false],
+[569,20,'Diorama de cena icônica de anime','rf','Colecionável premium',false],
+[570,20,'Estatueta de personagem de anime customizada','r','Qualidade de resina 12K impressiona',true],
+[571,20,'Plaquinha de "bias" favorito do grupo','l','K-pop — produto de fã',false],
+[572,20,'Display de merchadising de fandom','fl','Organização de coleção',false],
+[573,20,'Case de AirPods temático de anime','fr','Case customizada — muito buscada',false],
+[574,20,'Anel temático de personagem de anime','r','Acessório de cosplay',false],
+[575,20,'Miniatura de cena icônica de filme','rf','Colecionável de cinema',false],
+[576,20,'Pulseira de contas temática de anime','rm','Acessório de fã acessível',false],
+[577,20,'Espada decorativa de anime','fr','Decoração + cosplay',false],
+[578,20,'Escudo de herói de anime','fr','Decoração + cosplay',false],
+[579,20,'Caixa de photocards de K-pop','lf','Colecionador organizado',false],
+[580,20,'Suporte de monitor temático de anime','fl','Setup gamer otaku',false],
+[581,20,'Estatueta de idol K-pop em resina (miniatura)','r','Colecionável exclusivo',false],
+[582,20,'Quadro de fanart em madeira gravado','l','Arte de fandom física',false],
+[583,20,'Case de celular de personagem favorito','fr','iPhone temático de anime',false],
+[584,20,'Porta-copo de fandom personalizado','fl','Acessório de uso diário temático',false],
+[585,20,'Headband de cosplay de personagem','fr','Acessório fácil de cosplay',false],
+[586,20,'Badge/crachá de evento de anime','lr','Convenção de anime — lotes grandes',false],
+[587,20,'Diorama de Studio Ghibli','rf','Presente para fã de Ghibli',false],
+[588,20,'Colar de Pokémon em resina','r','Nicho Pokémon — eterno',false],
+[589,20,'Estatueta fanart de Marvel/DC','r','Super-heróis — nicho imensa',false],
+[590,20,'Porta-nome de fandom personalizado','fl','Decoração de quarto de fã',false],
+[591,20,'Suporte de mousepad temático','f','Setup otaku',false],
+[592,20,'Mini-cenário de jogo indie','fr','Undertale, Stardew, Hollow Knight',false],
+[593,20,'Chaveiro de personagem de jogo','rf','Presente gamer acessível',false],
+[594,20,'Troféu de torneio de e-sports','lr','Evento gamer',false],
+[595,20,'Suporte de card game (Magic, Pokémon)','fl','Jogador de card game',false],
+[596,20,'Case de óculos temático de personagem','fr','Fanart utilizável',false],
+[597,20,'Insígnia de guild/clã de jogo','lr','Comunidade gamer',false],
+[598,20,'Painel de quarto gamer + anime','fl','Decoração de quarto jovem',false],
+[599,20,'Painel de madeira com mapa de jogo favorito','lf','Decoração gamer premium',false],
+[600,20,'Kit completo de fã (presente para otaku)','rfmlc','Presente premium para fã',false],
+// === SEÇÃO 21: CARNAVAL & FANTASIA (40) ===
+[601,21,'Máscara de carnaval veneziana em resina','rf','Carnaval + decoração permanente',false],
+[602,21,'Adereço de cabeça para fantasia','fr','Carnaval e Halloween',false],
+[603,21,'Partes de armadura de cavaleiro','fr','Cosplay e fantasia de festa',false],
+[604,21,'Asas de fada/anjo impressas','fl','Fantasia infantil e adulta',false],
+[605,21,'Cetro de rainha/bruxa em resina','fr','Cosplay e fantasia',false],
+[606,21,'Coroa de princesa impressa em resina','fr','🔥 Festa de 15 anos e aniversário',true],
+[607,21,'Capacete de viking em FDM','fr','Cosplay e fantasia medieval',false],
+[608,21,'Máscara de vilão temática','fr','Cosplay de super-vilão',false],
+[609,21,'Nariz de palhaço personalizado em silicone','fm','Carnaval e mágico',false],
+[610,21,'Chapéu de bruxa com estrutura interna','f','Halloween — sazonal',false],
+[611,21,'Espadinha de pirata em PETG','f','Fantasia de pirata infantil/adulto',false],
+[612,21,'Orelha de elfo/goblin em silicone','fm','Cosplay e fantasia',false],
+[613,21,'Chifre de demônio em FDM ou silicone','fm','Halloween e carnaval',false],
+[614,21,'Máscara de caveira (skull) em resina','rf','Cosplay e decoração de Halloween',false],
+[615,21,'Acessórios steampunk (engrenagens, óculos)','fl','Cosplay steampunk',false],
+[616,21,'Arma prop de cosplay (precisa de acabamento)','fr','Cosplay premium',false],
+[617,21,'Colete temático de couro gravado','l','Cosplay medieval e fantasia',false],
+[618,21,'Asa de borboleta em resina colorida','rf','Fantasia e decoração',false],
+[619,21,'Cauda de sereia articulada em FDM','fm','Fantasia aquática',false],
+[620,21,'Fantasia de robô (partes armaduras)','f','Cosplay futurista',false],
+[621,21,'Cabeça/garra de dinossauro para fantasia','f','Fantasia infantil',false],
+[622,21,'Máscara de teatro (comédia/tragédia)','rf','Decoração e fantasia clássica',false],
+[623,21,'Plaquinha de teatro personalizada','l','Teatro amador e profissional',false],
+[624,21,'Nome de personagem de palco em madeira','l','Decoração de camarim',false],
+[625,21,'Adereço de cena (objeto de palco)','fl','Teatro amador e escola',false],
+[626,21,'Prótese de efeito especial em silicone (sfx)','m','Makeup sfx — nicho criativo',false],
+[627,21,'Lança ou cajado mágico em FDM','fr','Cosplay de mago',false],
+[628,21,'Peças de xadrez temáticas de fantasia (presentes)','r','Jogo + fantasia = nicho duplo',false],
+[629,21,'Capacete de astronauta (partes)','f','Cosplay de ficção científica',false],
+[630,21,'Peças de super-herói (peitoral, máscara)','fr','Cosplay premium',false],
+[631,21,'Insígnia de delegado/policial (prop)','rl','Fantasia e prop de TV',false],
+[632,21,'Cabide temático de fantasia','fl','Organização de fantasia',false],
+[633,21,'Protetor de fantasia para transporte','f','Armazenamento de cosplay',false],
+[634,21,'Kit de sfx (silicone para efeito de ferida)','m','Makeup de Halloween e cinema',false],
+[635,21,'Cenário de teatro modular','fl','Escola de teatro amador',false],
+[636,21,'Brinco de carnaval em resina','rm','Acessório de carnaval',false],
+[637,21,'Confete decorativo 3D (estrelas, corações)','fr','Decoração de festa',false],
+[638,21,'Plaquinha de camarim personalizada','l','Teatro e ensaio',false],
+[639,21,'Mascote de escola de samba em resina','rf','Carnaval — encomenda sazonal',false],
+[640,21,'Kit completo de fantasia impressa','rfml','Fantasia de cosplay premium',false],
+// === SEÇÃO 22: SUSTENTABILIDADE (40) ===
+[641,22,'Canudo reutilizável em PETG','f','PETG: não tóxico, reutilizável, durável',false],
+[642,22,'Conjunto de talheres travel kit reutilizável','f','Viajante eco-friendly',false],
+[643,22,'Case de celular imitação bambu em PETG','f','Estética natural + sustentabilidade',false],
+[644,22,'Porta-absorvente reutilizável','fl','Higiene menstrual sustentável',false],
+[645,22,'Organizador de sacolas ecológicas','fl','Zero waste kitchen',false],
+[646,22,'Copo dobrável para camping','f','Aventureiro sustentável',false],
+[647,22,'Case de sabonete sólido de viagem','f','Zero waste — tendência strong',false],
+[648,22,'Suporte de coador de café reutilizável','f','Café em casa — nicho grande',false],
+[649,22,'Tampa de PETG para potes/vasilhas','f','Substituição de plástico descartável',false],
+[650,22,'Plaquinha de horta orgânica certificada','l','Produtor orgânico',false],
+[651,22,'Suporte de muda de árvore (replantio)','f','Reflorestamento e sustentabilidade',false],
+[652,22,'Kit de cozinha zero waste organizado','fl','Cozinha sustentável premium',false],
+[653,22,'Protetor de frutas e vegetais (cesta)','f','Armazenamento eco de alimentos',false],
+[654,22,'Case de composteira doméstica','f','Compostagem em apartamento',false],
+[655,22,'Prendedor de pão eco (clipe reutilizável)','f','Alternativa ao lacre plástico',false],
+[656,22,'Organizador de bolsa de compras reutilizável','f','Supermercado zero waste',false],
+[657,22,'Plaquinha "Aqui não usamos plástico"','l','Restaurante e comércio eco',false],
+[658,22,'Brinquedo de criança em PETG (durável)','f','Alternativa durável ao plástico barato',false],
+[659,22,'Kit de higiene pessoal zero waste','fm','Escova, sabonete, copo — tudo reutilizável',false],
+[660,22,'Suporte de toalha de pano reutilizável','f','Substituição de papel toalha',false],
+[661,22,'Forma de cera de abelha (beeswax wrap)','m','Embalagem natural de alimento',false],
+[662,22,'Escova de dentes com suporte (PETG)','f','Higiene sustentável',false],
+[663,22,'Porta-xampu sólido de banheiro','f','Banheiro zero waste',false],
+[664,22,'Suporte de vela de cera natural','fm','Velas artesanais eco',false],
+[665,22,'Kit de beeswax wrap (molde para ateliê)','m','🔥 Vender o molde para artesãs',true],
+[666,22,'Organizador de coleta seletiva doméstica','fl','Coleta seletiva em casa',false],
+[667,22,'Saco de lixo reutilizável (suporte)','f','Redução de plástico descartável',false],
+[668,22,'Plaquinha de monitoramento de energia solar','lf','Casa com energia solar',false],
+[669,22,'Organizador visual de coleta seletiva','fl','Educação ambiental',false],
+[670,22,'Brinquedo ecológico em bioplástico simulado','f','Brinquedo sustentável infantil',false],
+[671,22,'Revestimento modular para parede interior','fl','Decoração eco-friendly',false],
+[672,22,'Cartão de visita de madeira gravado','l','Negócio sustentável — cartão permanente',true],
+[673,22,'Plaquinha "Água preciosa, não desperdice"','l','Conscientização ambiental',false],
+[674,22,'Suporte de filtro de carvão para torneira','f','Purificação de água doméstica',false],
+[675,22,'Organizador de material de bijou ecológico','fl','Artesã sustentável',false],
+[676,22,'Potinho de fermento natural (sourdough)','f','Padeiro artesanal doméstico',false],
+[677,22,'Caixa de kit de sementes personalizadas','lf','Horticultura doméstica',false],
+[678,22,'Suporte de minhocário doméstico','f','Vermicompostagem',false],
+[679,22,'Embalagem reutilizável para presentes','fl','Substituição de papel de presente',false],
+[680,22,'Kit completo eco-friendly para casa','flmc','Presente eco premium',false],
+// === SEÇÃO 23: INDÚSTRIA & MAKERS (40) ===
+[681,23,'Protótipo de produto para startup','fr','🔥 B2B de alto valor',true],
+[682,23,'Jig de montagem customizado','f','Produção industrial pequena',false],
+[683,23,'Gabarito de furação/perfuração','f','Marceneiro e eletricista',false],
+[684,23,'Modelo de molde para injeção plástica (teste)','fr','Pré-produção industrial',false],
+[685,23,'Peça de reposição para eletrodoméstico','f','🔥 Serviço único no mercado',true],
+[686,23,'Engrenagem customizada em PETG','f','Mecânica de precisão',false],
+[687,23,'Fixador e presilha industrial','f','Produção industrial',false],
+[688,23,'Case de eletrônica/PCB personalizado','f','Projeto eletrônico',false],
+[689,23,'Painel de controle customizado','f','Automação industrial',false],
+[690,23,'Suporte de sensor IoT em PETG','f','Projetos de IoT',false],
+[691,23,'Duto e ventilador customizado','f','Resfriamento de equipamento',false],
+[692,23,'Adaptador de encaixe universal','f','Mecânica e hidráulica',false],
+[693,23,'Suporte de motor elétrico','f','Robótica e automação',false],
+[694,23,'Bocal de extrusão customizado','fr','Impressão 3D — vender para outros makers',false],
+[695,23,'Organizador de componentes eletrônicos','fl','Engenheiro eletrônico',false],
+[696,23,'Case de Arduino/ESP32 customizado','f','Maker e desenvolvedor IoT',false],
+[697,23,'Template/jig de solda','f','Soldagem de precisão',false],
+[698,23,'Guia de corte de madeira','fl','Marcenaria doméstica',false],
+[699,23,'Suporte de estator de motor','f','Robótica e eletrônica',false],
+[700,23,'Ferramenta de calibração customizada','fr','Controle de qualidade',false],
+[701,23,'Porta-broca de bancada','fl','Oficina doméstica',false],
+[702,23,'Suporte de ferro de solda','f','Bancada de eletrônica',false],
+[703,23,'Organizador de parafusos/porcas modular','fl','Oficina organizada',false],
+[704,23,'Case de multímetro personalizado','f','Eletricista e técnico',false],
+[705,23,'Gabarito de corte a laser','l','Produção com laser organizada',false],
+[706,23,'Suporte de PCB para soldagem','f','Eletrônica de precisão',false],
+[707,23,'Case de módulo LoRa/WiFi/BT','f','Projetos IoT',false],
+[708,23,'Guia de montagem de móvel','fl','Marcenaria e montagem',false],
+[709,23,'Upgrade/acessório para impressora 3D','f','Maker — vende para makers',false],
+[710,23,'Acessório customizado para CNC','f','Marceneiro com CNC',false],
+[711,23,'Porta-componente de relojoaria (hobby)','fr','Relojoeiro amador',false],
+[712,23,'Chaveiro de maker/engineer em resina','r','Identidade profissional',false],
+[713,23,'Insígnia de makerspace/hackerspace','lf','Identidade de espaço maker',false],
+[714,23,'Ferramenta de torque improvised','f','Mecânica doméstica',false],
+[715,23,'Suporte de osciloscópio de bancada','f','Bancada de eletrônica',false],
+[716,23,'Guia de alinhamento óptico','f','Óptica e laser',false],
+[717,23,'Organizador de resistores/capacitores','fl','Eletrônica organizada',false],
+[718,23,'Case de fonte de bancada','f','Bancada de engenheiro',false],
+[719,23,'Suporte de cluster de Raspberry Pi','f','HomeLab e servidor doméstico',false],
+[720,23,'Kit completo de organização de bancada','flc','Presente para maker e engenheiro',false],
+// === SEÇÃO 24: ASTROLOGIA & ESOTERISMO (40) ===
+[721,24,'Mandala de signo em MDF cortada a laser','l','🔥 Astrologia explodiu no BR',true],
+[722,24,'Colar com símbolo zodiacal em resina','r','Acessório de signo — alto giro',true],
+[723,24,'Caixa de tarot personalizada em madeira','l','Tarólogo e fã de tarot',false],
+[724,24,'Cristal decorativo impresso em resina','r','New age — muito popular',false],
+[725,24,'Suporte de cristais naturais','fl','Colecionadora de cristais',false],
+[726,24,'Altar de lua (decoração de Wicca)','lf','Wicca e bruxaria moderna',false],
+[727,24,'Plaquinha de signo personalizada','l','Astrologia — presente de aniversário',false],
+[728,24,'Pulseira de chakra em resina','rm','New age e espiritualidade',false],
+[729,24,'Estatueta de deusa lua em resina','rf','Wicca e espiritualidade feminina',false],
+[730,24,'Moldura de espelho com fases da lua','l','Decoração new age',false],
+[731,24,'Incensário de lua em resina','rf','Rituais e meditação',false],
+[732,24,'Suporte de varinha mágica (wand)','fl','Wicca e bruxaria',false],
+[733,24,'Mapa astral impresso em madeira gravado','l','Presente de aniversário personalizado',false],
+[734,24,'Caixa de cristais em madeira gravada','l','Colecionadora de cristais',false],
+[735,24,'Plaquinha de energia positiva','l','Decoração de ambiente positivo',false],
+[736,24,'Suporte de carta oracular de mesa','fl','Tarólogo profissional',false],
+[737,24,'Decoração de bruxa (caldeirão, chapéu)','fr','Halloween + wicca permanente',false],
+[738,24,'Anel de proteção energética em resina','r','Acessório espiritual',false],
+[739,24,'Pedra gravitacional (amuleto) em resina','rm','Presente espiritual',false],
+[740,24,'Totem de proteção personalizado','fr','Espiritualidade alternativa',false],
+[741,24,'Mandala de cura em madeira','l','Decoração de consultório holístico',false],
+[742,24,'Organizador de baralho de tarot','fl','Tarólogo',false],
+[743,24,'Molde de vela mágica personalizada','m','🔥 Vender molde para artesãs de velas',true],
+[744,24,'Amuleto de labradorita simulado em resina','rm','Cristal energético decorativo',false],
+[745,24,'Decoração de Samhain/Halloween esotérico','fr','Nicho esotérico + Halloween',false],
+[746,24,'Mini-jardim de fadas decorativo','fr','Jardim encantado espiritual',false],
+[747,24,'Plaquinha "Esta casa é protegida"','l','Decoração espiritual',false],
+[748,24,'Pêndulo de cristal em resina','rm','Radiestesia e meditação',false],
+[749,24,'Colar de olho grego em resina','r','Proteção — muito popular',false],
+[750,24,'Bolsa de proteção de runas em silicone','ml','Wicca e espiritualidade nórdica',false],
+[751,24,'Runa gravada em "pedra" (resina)','rl','Esoterismo nórdico',false],
+[752,24,'Caixa de runas em madeira','l','Wicca e espiritualidade nórdica',false],
+[753,24,'Decoração de equinócio/solstício','lf','Calendário pagão/wicca',false],
+[754,24,'Espelho de bruxa (decoração)','l','Decoração esotérica',false],
+[755,24,'Suporte de vela de ritual','fl','Rituais espirituais',false],
+[756,24,'Porta de Lua (decoração de parede)','l','Decoração new age',false],
+[757,24,'Organizador de itens de altar','fl','Praticante de ritual',false],
+[758,24,'Suporte de planta de energia (bambu da sorte)','f','Feng shui doméstico',false],
+[759,24,'Decoração de lua crescente em madeira','l','Decoração new age',false],
+[760,24,'Kit completo de esoterismo (presente)','lrmc','Presente para amante do misticismo',false],
+// === SEÇÃO 25: COUNTRY & AGRONEGÓCIO (40) ===
+[761,25,'Plaquinha de fazenda/sítio personalizada','l','🔥 Mercado rural — enorme no BR',true],
+[762,25,'Porta-chapéu de cowboy na parede','fl','Decoração country',false],
+[763,25,'Decoração de rodeio (boi, laço, estrela)','rfL','Rodeo — explosivo no interior BR',false],
+[764,25,'Plaquinha personalizada de estábulo','l','Dono de cavalo',false],
+[765,25,'Nome do cavalo em plaquinha de couro gravado','l','Cavaleiro e criador de cavalos',false],
+[766,25,'Chaveiro de ferradura em resina','rl','Presente country',false],
+[767,25,'Decoração country (estrela, madeira rústica)','l','Decoração de casa rural',false],
+[768,25,'Kit churrasco personalizado (tábua + porta-espeto)','l','🔥 Churrasqueiro BR — mercado enorme',true],
+[769,25,'Suporte decorativo de garrafa de pinga artesanal','lf','Bebida artesanal + country',false],
+[770,25,'Plaquinha "Aqui mora um cowboy/a"','l','Humor + decoração rural',false],
+[771,25,'Miniatura de trator John Deere','fr','🔥 Fazendeiro e filho de fazendeiro',true],
+[772,25,'Decoração de celeiro (estilo barn door)','l','Decoração rústica',false],
+[773,25,'Plaquinha de leilão de gado','l','Agronegócio profissional',false],
+[774,25,'Suporte de esporas decorativo','fl','Decoração country',false],
+[775,25,'Decoração de cocho (mini-cocho) ornamental','f','Decoração de fazenda',false],
+[776,25,'Colar de ferradura em resina','r','Acessório country feminino',false],
+[777,25,'Plaquinha de "Propriedade privada" estilo country','l','Fazenda e sítio',false],
+[778,25,'Decoração de viola caipira na parede','l','Cultura caipira brasileira',false],
+[779,25,'Suporte de sela decorativo','fl','Cavaleiro',false],
+[780,25,'Brinco de orelha de gado identificador','l','Produtor pecuário',false],
+[781,25,'Porta-espeto de churrasco personalizado','lf','Churrasqueiro dedicado',false],
+[782,25,'Decoração de festa junina (bandeirinhas, palha)','lf','Festa junina — sazonalidade',false],
+[783,25,'Bandeirinha de festa junina personalizada','lf','Festa junina',false],
+[784,25,'Chapéu de palha miniatura decorativo','f','Decoração temática',false],
+[785,25,'Plaquinha de "Rancho do [nome]"','l','Identidade do espaço rural',false],
+[786,25,'Suporte rústico de garrafas de vinho','l','Decoração de adega rústica',false],
+[787,25,'Decoração de cozinha sertaneja','l','Identidade cultural nordestina/caipira',false],
+[788,25,'Insígnia de clube de rodeio em resina','lr','Identidade de clube',false],
+[789,25,'Troféu de rodeio/vaquejada personalizado','lr','Competição de rodeio',false],
+[790,25,'Kit presente para fazendeiro','lrfc','Presente premium para homem do campo',false],
+[791,25,'Plaquinha de pousada rural personalizada','l','Turismo rural',false],
+[792,25,'Escultura de cavalo em resina','rf','Cavaleiro e apreciador',false],
+[793,25,'Moldura de foto country em madeira','l','Decoração de casa rural',false],
+[794,25,'Plaquinha de "Bem-vindo ao rancho"','l','Identidade de espaço rural',false],
+[795,25,'Suporte de chicote decorativo','fl','Decoração de cowboy',false],
+[796,25,'Caixa de madeira com tema rural gravado','l','Presente country premium',false],
+[797,25,'Nome de fazenda em madeira rústica','l','Identidade de fazenda',false],
+[798,25,'Plaquinha de "Área de preservação ambiental"','l','Fazenda com compromisso ambiental',false],
+[799,25,'Kit de brindes rurais personalizados','lc','Presente para agronegócio',false],
+[800,25,'Souvenir de cidade do interior (turismo rural)','lfr','Presente de lembrança regional',false],
+// === SEÇÃO 26: BEBÊ & MATERNIDADE (40) ===
+[801,26,'Kit completo de chá de bebê personalizado','lfc','🔥 Mãe não regura em produto de bebê',true],
+[802,26,'Plaquinha de quarto de bebê com nome','l','Decoração do quarto do bebê',true],
+[803,26,'Lembrancinha de chá de bebê em MDF','l','Lotes de 30–100 unidades',false],
+[804,26,'Topo de bolo de chá de bebê','rl','Alta demanda constante',false],
+[805,26,'Caixinha de maternidade personalizada','lf','Kit maternidade premium',false],
+[806,26,'Porta-fralda de parede','fl','Quarto de bebê organizado',false],
+[807,26,'Caixa de memórias do primeiro ano','lf','Baú gravado — produto emocional',false],
+[808,26,'Molde de mãozinha e pezinho do bebê','m','🔥 Eternizar o momento com molde de silicone',true],
+[809,26,'Escultura de mãozinha do bebê em resina','rmc','Produto emocional — ticketíssimo',false],
+[810,26,'Régua de crescimento do bebê em madeira','l','Decoração de quarto infantil',false],
+[811,26,'Kit de higiene do bebê organizado','fl','Funcional + personalizado',false],
+[812,26,'Plaquinha de "Bem-vindo [nome do bebê]"','l','Presente de maternidade',false],
+[813,26,'Decoração de quarto de bebê temática','lf','Tema de safari, estrelinhas, etc.',false],
+[814,26,'Suporte de chupeta personalizado','f','Acessório de bebê',false],
+[815,26,'Porta-mamadeira de bancada','f','Organização de mamadeiras',false],
+[816,26,'Organizador de fraldas e acessórios','fl','Praticidade de mamãe',false],
+[817,26,'Moldura de ultrassom personalizada','l','Presente emocional de gravidez',false],
+[818,26,'Plaquinha de gestante (meses de gravidez)','l','Registro fotográfico de gravidez',false],
+[819,26,'Decoração de gêmeos personalizada','lf','Mãe de gêmeos — nicho especial',false],
+[820,26,'Mini-almofada decorativa com nome','f','Quarto de bebê',false],
+[821,26,'Caixinha de dente de leite','lf','Tradição — guardar o primeiro dente',false],
+[822,26,'Porta-bico de mamadeira','f','Higiene de bebê',false],
+[823,26,'Identificador de pertences do bebê (creche)','lf','Organização de creche',false],
+[824,26,'Quadro de mensagens para o bebê','l','Presente de baby shower',false],
+[825,26,'Plaquinha do hospital (nascimento)','l','Lembrança do nascimento',false],
+[826,26,'Organizador de bolsa de maternidade','f','Praticidade de mamãe',false],
+[827,26,'Suporte de monitor de bebê','f','Quarto de bebê organizado',false],
+[828,26,'Decoração de berçário com nome e data','l','Personalização total do quarto',false],
+[829,26,'Plaquinha de "Irmão/Irmã mais velho(a)"','l','Presente para filho mais velho na chegada do bebê',false],
+[830,26,'Suporte de brinquedo de bebê','f','Organização do quarto',false],
+[831,26,'Gravata/laço de nascimento para carrinho','lf','Decoração de maternidade',false],
+[832,26,'Kit de lembrança de nascimento (presente)','lrfc','Presente premium para maternidade',false],
+[833,26,'Porta-pelúcia de parede','f','Organização de brinquedos de pelúcia',false],
+[834,26,'Plaquinha de mãe com frase','l','Presente para o Dia das Mães',false],
+[835,26,'Organizador de papéis do bebê (certidão, etc.)','lf','Documentos de bebê organizados',false],
+[836,26,'Decoração de festa de 1 ano personalizada','lf','Festa de 1 ano — muito planejada',false],
+[837,26,'Topo de bolo de 1 ano personalizado','rl','Presente de aniversário de 1 ano',false],
+[838,26,'Plaquinha de "Meu primeiro [objeto]"','l','Marco de desenvolvimento do bebê',false],
+[839,26,'Suporte de brinquedo de banho','f','Organização de banheiro infantil',false],
+[840,26,'Kit maternidade completo (presente)','lfrc','Presente completo para mãe de primeira viagem',false],
+// === SEÇÃO 27: ARTE & CRAFT SUPPLIES (40) ===
+[841,27,'Molde de silicone para resina epóxi (arte)','m','🔥 Artesã compra molde = cliente recorrente',true],
+[842,27,'Molde de silicone para vela artesanal','m','🔥 Confeitaria e velas — mercado enorme',true],
+[843,27,'Molde de silicone para argila polimérica','m','Fimo e argila — muito popular',false],
+[844,27,'Molde de silicone para gesso/cimento','m','Decoração DIY em gesso',false],
+[845,27,'Ferramenta de textura para argila (stamp)','rf','Artesã de argila polimérica',false],
+[846,27,'Suporte de pincel de artista organizado','fl','Artista plástico e ilustrador',false],
+[847,27,'Porta-tinta de aquarela organizado','fl','Aquarelista e ilustrador',false],
+[848,27,'Canvas frame (chassi) personalizado','f','Pintor — tamanhos customizados',false],
+[849,27,'Suporte de tela de pintura inclinado','fl','Artista plástico',false],
+[850,27,'Organizador de fita washi tape','f','Papelaria e scrapbook',false],
+[851,27,'Case de carimbos de scrapbook','fl','Scrapbook — nicho grande no BR',false],
+[852,27,'Organizador de marcadores de álcool (Copic)','fl','Illustrador profissional',false],
+[853,27,'Suporte de caneta técnica/nankin','fl','Illustrador e arquiteto',false],
+[854,27,'Porta-paleta de aquarela','f','Aquarelista',false],
+[855,27,'Molde de silicone para biscuit','m','Biscuit — artesanato muito popular no BR',true],
+[856,27,'Organizador de linha de bordado','fl','Bordado e crochê — nicho feminino forte',false],
+[857,27,'Porta-agulha de bordado (organizador)','fl','Bordadeira profissional',false],
+[858,27,'Frame de bordado customizado','fl','Bordado à mão',false],
+[859,27,'Suporte de tricô/crochê (porta-fio)','f','Tricoteira e crochê — nicho feminino',false],
+[860,27,'Organizador de botões e aviamentos','fl','Costureira e alfaiate',false],
+[861,27,'Porta-furador de scrapbook','f','Scrapbook organizado',false],
+[862,27,'Molde de silicone para sabonete artesanal','m','Sabonete artesanal — mercado enorme',true],
+[863,27,'Suporte de guilhotina de papel','f','Artesã de papel',false],
+[864,27,'Porta-matriz de corte (dies)','f','Artesã de scrapbook',false],
+[865,27,'Organizador de glitter e pigmentos','fl','Artesã de resina e decoração',false],
+[866,27,'Suporte de ferro de passar apliques','f','Costureira',false],
+[867,27,'Mesa de luz LED para desenho e calco','f','Illustrador e tattoo artista',false],
+[868,27,'Porta-gillete de artesão (cutting)','f','Artesão de corte',false],
+[869,27,'Organizador de fitas de presente','fl','Embalagem e laçarote',false],
+[870,27,'Suporte de pistola de cola quente','fl','Artesão em geral',false],
+[871,27,'Porta-molde de costura','fl','Costureira profissional',false],
+[872,27,'Organizador de elásticos de bijuteria','fl','Artesã de bijuteria',false],
+[873,27,'Suporte de alicate de joalheiro','fl','Artesã de bijuteria',false],
+[874,27,'Porta-rolo de papel kraft','f','Embrulhador artesanal',false],
+[875,27,'Suporte de estêncil de pintura','f','Artesão e decorador',false],
+[876,27,'Organizador de contas e miçangas','fl','Bijuteria e artesanato',false],
+[877,27,'Porta-faca X-acto de artesão','fl','Artesão de corte',false],
+[878,27,'Suporte de heat gun (secador industrial)','f','Artesão de resina e crimpagem',false],
+[879,27,'Organizador de materiais de macramê','fl','Macramê — tendência em alta',false],
+[880,27,'Kit completo de organização de ateliê','flmc','Presente para artesã profissional',false],
+// === SEÇÃO 28: TURISMO & SOUVENIRS (40) ===
+[881,28,'Maquete de Cristo Redentor em resina','rf','Souvenir do Rio de Janeiro',true],
+[882,28,'Mapa do estado/cidade em madeira gravado','l','Souvenir regional personalizado',true],
+[883,28,'Plaquinha de cidade turística gravada','l','Souvenir de viagem',false],
+[884,28,'Miniatura de ponto turístico local','rf','Souvenir de qualidade premium',false],
+[885,28,'Imã de geladeira com ponto turístico','lr','Souvenir de viagem clássico',false],
+[886,28,'Plaquinha "Eu amo [cidade]"','l','Souvenir turístico',false],
+[887,28,'Caneca/porta-copos temático da cidade','lf','Souvenir utilitário',false],
+[888,28,'Maquete de arquitetura típica regional','rf','Souvenir diferenciado',false],
+[889,28,'Plaquinha de endereço em estilo de cidade famosa','l','Decoração residencial temática',false],
+[890,28,'Mapa de trilha de região gravado','l','Trilheiro e ecoturista',false],
+[891,28,'Miniatura de comida típica regional','rf','Souvenir gastronômico',false],
+[892,28,'Plaquinha de praça/rua famosa','l','Souvenir de bairro histórico',false],
+[893,28,'Maquete de catedral/igreja histórica','rf','Turismo religioso',false],
+[894,28,'Porta-copos com mapa da cidade','lf','Souvenir de hospedagem',false],
+[895,28,'Decoração temática de estado (bandeira)','lf','Identidade estadual',false],
+[896,28,'Miniatura de animal endêmico (arara, onça)','rf','Ecoturismo e fauna brasileira',false],
+[897,28,'Mapa astral da cidade natal','l','Presente de saudade',false],
+[898,28,'Plaquinha de "Orgulho de ser [cidade]"','l','Identidade local',false],
+[899,28,'Maquete de stadium/arena local','rf','Torcedor — souvenir de time',false],
+[900,28,'Presente de bon voyage personalizado','lf','Viagem — presente de despedida',false],
+[901,28,'Maquete de casas típicas nordestinas','rf','Artesanato nordestino modernizado',false],
+[902,28,'Mapa do interior do Brasil gravado','l','Orgulho regional',false],
+[903,28,'Plaquinha de nome de pousada/hotel','l','B2B turístico',false],
+[904,28,'Kit de boas-vindas de pousada personalizado','lfc','B2B turístico premium',false],
+[905,28,'Maquete de favela artística (arte urbana)','rf','Arte social brasileira',false],
+[906,28,'Decoração de Festa Junina regional','lf','Turismo cultural sazonal',false],
+[907,28,'Plaquinha de "Bem-vindo ao Brasil"','l','Turista internacional',false],
+[908,28,'Miniatura de ônibus de cidade (ex: Rio, SP)','fr','Souvenir urbano',false],
+[909,28,'Plaquinha de rota de viagem road trip','l','Viajante de carro',false],
+[910,28,'Mapa de road trip personalizado','l','Viagem de carro personalizada',false],
+[911,28,'Miniatura de fortaleza/castelo histórico','rf','Turismo histórico',false],
+[912,28,'Decoração de praia (onda, ancora, estrela-do-mar)','lrf','Litoral — imensa demanda',false],
+[913,28,'Plaquinha de "Voltei do/da [destino]"','l','Souvenir de volta de viagem',false],
+[914,28,'Porta-moeda de couro temático de viagem','l','Viajante frequente',false],
+[915,28,'Maquete de barco pesqueiro local','rf','Souvenir de cidade costeira',false],
+[916,28,'Plaquinha de "Altitude [X] metros" de montanha','l','Souvenir de escalada',false],
+[917,28,'Decoração de café colonial regional','l','Turismo gastronômico',false],
+[918,28,'Emblema de rota turística (Estrada Real, etc.)','lr','Turismo de rota',false],
+[919,28,'Maquete de parque nacional','rf','Ecoturismo',false],
+[920,28,'Kit souvenir completo de cidade','lrfc','Presente turístico premium',false],
+// === SEÇÃO 29: CROSSFIT & ARTES MARCIAIS (40) ===
+[921,29,'Plaquinha de WOD (Workout of the Day) para box','l','🔥 Box de CrossFit — B2B lucrativo',true],
+[922,29,'Troféu de competição CrossFit personalizado','lr','Competição de CrossFit',false],
+[923,29,'Plaquinha de PR (record) de atleta de CrossFit','l','Motivação do atleta',false],
+[924,29,'Suporte de corda de pular da parede','f','Box de CrossFit',false],
+[925,29,'Case de salva-mão (hand grip) de CrossFit','f','Equipamento de CrossFit',false],
+[926,29,'Porta-barras de levantamento','f','Organização de box',false],
+[927,29,'Plaquinha de regras do box','l','Sinalização de academia',false],
+[928,29,'Insígnia de atleta de CrossFit','lr','Identidade de atleta',false],
+[929,29,'Chaveiro de kettlebell em resina','r','Presente para atleta de CrossFit',false],
+[930,29,'Suporte de faixa de judô na parede','fl','Arte marcial — dojo',false],
+[931,29,'Plaquinha de grau de faixa de BJJ','l','🔥 BJJ — mercado enorme no BR',true],
+[932,29,'Troféu de campeonato de jiu-jitsu','lr','Competição de BJJ',false],
+[933,29,'Suporte de quimono de jiu-jitsu','fl','Dojo e casa do atleta',false],
+[934,29,'Mascote de academia em resina','rf','Identidade de academia',false],
+[935,29,'Plaquinha de "Treino pesado, vida leve"','l','Decoração de academia',false],
+[936,29,'Luva de boxe miniatura em resina','r','Presente para boxeador',false],
+[937,29,'Suporte de saco de boxe','f','Home boxing',false],
+[938,29,'Plaquinha de tatame personalizada','l','Dojo e academia de luta',false],
+[939,29,'Troféu de campeonato de karatê','lr','Arte marcial oriental',false],
+[940,29,'Suporte de espada de kendo/iaijutsu','fl','Arte marcial japonesa',false],
+[941,29,'Plaquinha de dojo personalizada','l','Academia de artes marciais',false],
+[942,29,'Insígnia de clube de MMA','lr','MMA — muito popular no BR',false],
+[943,29,'Capacete de MMA display (decoração)','f','Decoração de academia de MMA',false],
+[944,29,'Plaquinha de "Zona de Combate"','l','Decoração de academia de luta',false],
+[945,29,'Suporte de bandagem de boxe','f','Organização de equipamento',false],
+[946,29,'Troféu de campeonato de muay thai','lr','Muay thai — crescente no BR',false],
+[947,29,'Plaquinha de frase de mestre budokan','l','Filosofia das artes marciais',false],
+[948,29,'Suporte de nunchaku decorativo','fl','Arte marcial — decoração de dojo',false],
+[949,29,'Porta-caneca de pré-treino personalizado','fl','Atleta de alta performance',false],
+[950,29,'Insígnia de time de MMA em resina','r','Torcedor de MMA',false],
+[951,29,'Plaquinha de técnica de luta (nome em japonês)','l','Decoração de dojo japonês',false],
+[952,29,'Suporte de peso de kettlebell wall','f','Organização de box',false],
+[953,29,'Troféu de campeonato de wrestling','lr','Luta olímpica',false],
+[954,29,'Decoração de "Hall of Fame" da academia','l','Reconhecimento de alunos',false],
+[955,29,'Plaquinha de cronômetro de treino','l','Decoração de box',false],
+[956,29,'Suporte de protetor bucal de atleta','f','Organização de equipamento',false],
+[957,29,'Chaveiro de faixa preta em resina','r','Conquista máxima do atleta',false],
+[958,29,'Insígnia de grau de faixa de karatê','lr','Arte marcial japonesa',false],
+[959,29,'Plaquinha de "Campeão" personalizada','l','Presente de conquista esportiva',false],
+[960,29,'Kit completo de academia (sinalização + troféu)','lrfc','B2B para academia completa',false],
+// === SEÇÃO 30: PREMIUM & LUXO (40) ===
+[961,30,'Busto executivo personalizado em resina 12K','r','🔥 Presente corporativo premium',true],
+[962,30,'Prêmio corporativo anual personalizado','lrc','Reconhecimento de liderança',true],
+[963,30,'Miniatura 3D do casal (casamento premium)','r','Presente de casamento de luxo',false],
+[964,30,'Relógio de mesa em madeira + resina + metal','lrc','Produto premium de alto ticket',false],
+[965,30,'Réplica de troféu de campeonato mundial','rf','Colecionador premium',false],
+[966,30,'Diorama de cena histórica personalizada','rf','Colecionador de arte premium',false],
+[967,30,'Placa de madeira maciça para empresa','l','Identidade corporativa premium',false],
+[968,30,'Escultura personalizada do cliente (retrato 3D)','r','🔥 Serviço único — retrato em resina',true],
+[969,30,'Maquete de residência personalizada','frl','Presente de inauguração premium',false],
+[970,30,'Arte 3D de casal em resina (presente de namoro)','r','Presente de luxo para casais',false],
+[971,30,'Coleção de bustos de família em resina','r','Presente de aniversário de família',false],
+[972,30,'Tabuleiro de xadrez premium (resina + madeira)','rlc','Produto de alto valor',false],
+[973,30,'Relógio de parede em madeira nobre','lrc','Decoração premium de escritório',false],
+[974,30,'Escultura abstrata de resina de colecionador','r','Arte + decoração premium',false],
+[975,30,'Luminária de resina com fóssil incluído','rc','Produto de arte e decoração raro',false],
+[976,30,'Mesa de resina com inclusões (rio de resina)','mrc','Produto de artesão de luxo',false],
+[977,30,'Presente VIP de aniversário (box premium)','lrfc','Caixa de presente personalizada premium',false],
+[978,30,'Escultura de animal em resina (lobo, leão)','r','Decoração de escritório de executivo',false],
+[979,30,'Presente de colecionador de vinhos (kit)','lrc','Amante de vinho — ticket alto',false],
+[980,30,'Maquete de veleiro personalizado','rf','Presente náutico premium',false],
+[981,30,'Plaquinha de homenagem em madeira nobre','l','Homenagem corporativa permanente',false],
+[982,30,'Escultura de mãos entrelaçadas (casais)','r','Presente de casamento exclusivo',false],
+[983,30,'Caixinha de pedido de casamento luxo','lrc','Momento único — produto premium',false],
+[984,30,'Presente de aposentadoria premium','lrc','Reconhecimento de carreira',false],
+[985,30,'Troféu de serviço (anos de empresa)','lrc','Reconhecimento corporativo',false],
+[986,30,'Arte de casal em LED + resina (presente)','rfc','Arte luminosa premium',false],
+[987,30,'Maquete de estádio de futebol personalizado','rfL','Presente para dono de clube',false],
+[988,30,'Busto de mascote de empresa em resina','r','Identidade corporativa em 3D',false],
+[989,30,'Presente de inauguração de filial corporativa','lrfc','B2B — empresa presenteando empresa',false],
+[990,30,'Coleção de miniaturas de carro clássico','r','Colecionador premium de automóveis',false],
+[991,30,'Escultura de mapa-múndi em madeira','l','Decoração de escritório premium',false],
+[992,30,'Relógio de sol de jardim em resina','rf','Decoração de jardim luxo',false],
+[993,30,'Arte cinética de resina (móbile)','rfc','Decoração de design premium',false],
+[994,30,'Presente de 25 anos de casamento (bodas de prata)','lrfc','Presente de bodas premium',false],
+[995,30,'Caixa de recordações de vida (memorial)','lrfc','Produto de homenagem post-mortem',false],
+[996,30,'Escultura de DNA personalizado em resina','r','Presente de biologia premium',false],
+[997,30,'Maquete de cidade favorita em miniatura','rfl','Colecionável de viajante',false],
+[998,30,'Arte abstrata de esporte favorito','rfl','Presente premium para atleta',false],
+[999,30,'Conjunto de arte de família (3 gerações)','rfl','Presente de família exclusivo',false],
+[1000,30,'🏆 Sua loja, suas regras — 1000 ideias, 1 máquina de cada vez','rflmc','🔥🔥 Comece por 1 ideia. Domine. Escale.',true],
+];
+
+// RENDER
+const secEl={};
+SECS.forEach(s=>{
+  const div=document.createElement('div');
+  div.className=`sec ${s.cls}`;
+  div.id=`sec${s.id}`;
+  div.innerHTML=`<div class="sec-hdr"><div class="sec-ico">${s.icon}</div><div><div class="sec-ttl">${s.title}</div><div class="sec-dsc">${s.desc}</div></div><div class="sec-cnt" id="cnt${s.id}">0 ideias</div></div><div class="grid" id="grid${s.id}"></div>`;
+  document.getElementById('sections').appendChild(div);
+  secEl[s.id]=div;
+});
+
+const tagMap={r:'tr',f:'tb',l:'to',m:'tpk',c:'tc'};
+const tagLabel={r:'Resina',f:'FDM',l:'Laser',m:'Molde',c:'Combo'};
+const cards=[];
+
+IDEAS.forEach(([id,sec,name,mcodes,potential,hot])=>{
+  const grid=document.getElementById(`grid${sec}`);
+  const ms=mcodes.split('');
+  const tags=ms.map(c=>`<span class="tag ${tagMap[c]||''}">${tagLabel[c]||''}</span>`).join('');
+  const pot=potential?`<div class="tp ${hot?'hot-tag':''}">${hot?'🔥 ':''} ${potential}</div>`:'';
+  const card=document.createElement('div');
+  card.className='card';
+  card.dataset.sec=sec;
+  card.dataset.m=mcodes;
+  card.dataset.hot=hot?'1':'0';
+  card.dataset.name=name.toLowerCase();
+  card.innerHTML=`<div class="ct"><span class="cn">#${String(id).padStart(3,'0')}</span><span class="cm">${name}</span></div><div class="ctags">${tags}</div>${pot}`;
+  grid.appendChild(card);
+  cards.push(card);
+});
+
+// Count section ideias
+SECS.forEach(s=>{
+  const cnt=document.querySelectorAll(`.card[data-sec="${s.id}"]`).length;
+  document.getElementById(`cnt${s.id}`).textContent=`${cnt} ideias`;
+});
+
+// FILTER & SEARCH
+let cf='all', cs='';
+function update(){
+  let v=0;
+  cards.forEach(c=>{
+    const m=c.dataset.m;
+    const hot=c.dataset.hot==='1';
+    const matchF=cf==='all'||(cf==='hot'?hot:m.includes(cf));
+    const matchS=cs===''||c.dataset.name.includes(cs);
+    const show=matchF&&matchS;
+    c.classList.toggle('hidden',!show);
+    if(show)v++;
+  });
+  SECS.forEach(s=>{
+    const vis=document.querySelectorAll(`#grid${s.id} .card:not(.hidden)`).length;
+    secEl[s.id].classList.toggle('hidden',vis===0);
+  });
+  document.getElementById('vc').textContent=v;
+  document.getElementById('rl').textContent=`${v} de 1000`;
+  document.getElementById('nr').style.display=v===0?'block':'none';
+}
+
+document.getElementById('filters').querySelectorAll('.fb').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    cf=btn.dataset.f;
+    update();
+  });
+});
+document.getElementById('sq').addEventListener('input',e=>{cs=e.target.value.toLowerCase();update();});
+update();
+// ===== MOTOR (RENDER + FILTRO) =====
+
+const sectionsEl = document.getElementById('sections');
+const searchInput = document.getElementById('sq');
+const resultLabel = document.getElementById('rl');
+const visibleCount = document.getElementById('vc');
+const noRes = document.getElementById('nr');
+
+let currentFilter = 'all';
+
+// ===== RENDER =====
+function render(){
+  sectionsEl.innerHTML = '';
+
+  SECS.forEach(sec=>{
+    const ideas = IDEAS.filter(i => i[1] === sec.id);
+
+    const section = document.createElement('div');
+    section.className = `sec ${sec.cls}`;
+
+    section.innerHTML = `
+      <div class="sec-hdr">
+        <div class="sec-ico">${sec.icon}</div>
+        <div>
+          <div class="sec-ttl">${sec.title}</div>
+          <div class="sec-dsc">${sec.desc}</div>
+        </div>
+        <div class="sec-cnt">${ideas.length}</div>
+      </div>
+
+      <div class="grid">
+        ${ideas.map(i => {
+          const machines = ml(i[3]).join('|');
+
+          return `
+            <div class="card"
+              data-machines="${machines}"
+              data-hot="${i[5]}"
+              data-text="${(i[2] + ' ' + i[4]).toLowerCase()}"
+            >
+              <div class="ct">
+                <div class="cn">#${i[0]}</div>
+                <div class="cm">${i[2]}</div>
+              </div>
+              <div class="ctags">
+                ${t(i[3]).map(c=>`<span class="tag ${c}"></span>`).join('')}
+              </div>
+              <div class="tp">${i[4]}</div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    `;
+
+    sectionsEl.appendChild(section);
+  });
+
+  applyFilters();
+}
+
+// ===== FILTRO =====
+function applyFilters(){
+  const q = searchInput.value.toLowerCase();
+  let total = 0;
+
+  document.querySelectorAll('.card').forEach(card=>{
+    const machines = card.dataset.machines.split('|');
+    const isHot = card.dataset.hot === "true";
+    const text = card.dataset.text;
+
+    let show = true;
+
+    if(currentFilter !== 'all'){
+      if(currentFilter === 'hot'){
+        show = isHot;
+      } else {
+        show = machines.includes(currentFilter);
+      }
+    }
+
+    if(q && !text.includes(q)){
+      show = false;
+    }
+
+    card.style.display = show ? 'block' : 'none';
+    if(show) total++;
+  });
+
+  visibleCount.innerText = total;
+  resultLabel.innerText = `${total} de ${IDEAS.length}`;
+  noRes.style.display = total === 0 ? 'block' : 'none';
+}
+
+// ===== EVENTOS =====
+document.querySelectorAll('.fb').forEach(btn=>{
+  btn.onclick = () => {
+    document.querySelectorAll('.fb').forEach(b=>b.classList.remove('on'));
+    btn.classList.add('on');
+    currentFilter = btn.dataset.f;
+    applyFilters();
+  };
+});
+
+searchInput.oninput = applyFilters;
+
+// ===== START =====
+render();
+</script>
+</body>
+</html>
